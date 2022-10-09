@@ -1,1 +1,5 @@
-# codigo-tutoriales-luisllamas_es
+Códigos de ejemplo de los tutoriales de www.luisllamas.es
+
+Para más información de cada código en el tutorial de su respectiva entrada, cuya dirección se indica en la cabecera.
+
+Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa.
