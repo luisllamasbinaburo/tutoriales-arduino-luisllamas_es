@@ -4,8 +4,9 @@ Enlace entrada: https://www.luisllamas.es/arduino-lcd-i2c/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <wire.h> 
-#include <liquidcrystal_i2c.h>
+```cpp
+#include <Wire.h> 
+#include <LiquidCrystal_I2C.h>
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);  // Inicia el LCD en la dirección 0x27, con 16 caracteres y 2 líneas
 
@@ -24,4 +25,4 @@ void setup()
 void loop()
 {
 }
-</liquidcrystal_i2c.h></wire.h>
+```

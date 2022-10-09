@@ -4,13 +4,15 @@ Enlace entrada: https://www.luisllamas.es/guardar-variables-entre-reinicios-con-
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 //Lee un único byte de la dirección address
 EEPROM.Read(address) 
 
 //Lee un único byte de la dirección address
 EEPROM.Write(address)
+```
 
-
+```cpp
 // Funciones para variables completas (tiene en cuenta el tamaño de la variable)
 //Lee una variable en la dirección address
 EEPROM.Put(address, variable) 
@@ -19,9 +21,10 @@ EEPROM.Put(address, variable)
 EEPROM.Get(address, variable) 
 
 EEPROM.Update(address, variable) //Actualiza el valor de una variable, es decir, primero la lee, y sólo la graba si su valor es distinto del que vamos a guardar. Esto favorece a reducir el número de escrituras, y alargar la vida útil de la memoria.
+```
 
-
-#include <eeprom.h>
+```cpp
+#include <EEPROM.h>
 
 void setup(
 {
@@ -34,9 +37,10 @@ void setup(
 void loop()
 {
 }
-</eeprom.h>
+```
 
-#include <eeprom.h>
+```cpp
+#include <EEPROM.h>
 
 float sensorValue;
 int eeAddress = 0;
@@ -60,9 +64,10 @@ void loop()
 
   delay(30000); //espera 30 segunos
 }
-</eeprom.h>
+```
 
-#include <eeprom.h>
+```cpp
+#include <EEPROM.h>
 
 struct MyStruct{
   float field1;
@@ -87,9 +92,10 @@ void setup()
 void loop()
 {
 }
-</eeprom.h>
+```
 
-#include <eeprom.h>
+```cpp
+#include <EEPROM.h>
 
 int eeAddress = 0;
 
@@ -107,9 +113,10 @@ void loop()
 
   delay(10000);  //Espera de 10 segundos
 }
-</eeprom.h>
+```
 
-#include <eeprom.h>
+```cpp
+#include <EEPROM.h>
 
 struct MyStruct{
   float field1;
@@ -138,4 +145,4 @@ void setup(){
 void loop()
 {
 }
-</eeprom.h>
+```

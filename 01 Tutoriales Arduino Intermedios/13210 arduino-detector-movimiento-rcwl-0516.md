@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-detector-movimiento-rcwl-0516/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int LEDPin = 13;
 const int RadarPin = 2;
  
@@ -29,3 +30,4 @@ void loop()
     digitalWrite(LEDPin, LOW);
   }
 }
+```

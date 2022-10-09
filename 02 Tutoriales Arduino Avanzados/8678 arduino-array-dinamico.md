@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-array-dinamico/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 int* list;
 size_t count;
 size_t capacity;
@@ -111,3 +112,4 @@ void setup()
 void loop()
 {
 }
+```

@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/detector-llama-arduino/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 const int sensorPin = 9;
 
 void setup()
@@ -24,8 +25,9 @@ void loop()
    }
    delay(1000);
 }
+```
 
-
+```csharp
 const int sensorPin = A0;
 
 void setup() {
@@ -44,3 +46,4 @@ void loop()
    }
    delay(1000);
 }
+```

@@ -4,20 +4,25 @@ Enlace entrada: https://www.luisllamas.es/enviar-y-recibir-mensajes-por-mqtt-con
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 PubSubClient ()
 PubSubClient (client)
 PubSubClient (server, port, [callback], client, [stream])
+```
 
-
+```csharp
 mqttClient.subscribe("hello/world");
+```
 
-
+```csharp
 mqttClient.publish("hello/world", (char*)payload.c_str());
+```
 
-
+```csharp
 mqttClient.loop();
+```
 
-
+```csharp
 boolean connect(const char* id);
 boolean connect(const char* id, const char* user, const char* pass);
 void disconnect();
@@ -37,11 +42,12 @@ PubSubClient& setSocketTimeout(uint16_t timeout);
 
 // prototipo de función callback
 void OnMqttReceived(char* topic, byte* payload, unsigned int length) 
+```
 
+```csharp
+#include <Ethernet.h>
 
-#include <ethernet.h>
-
-#include <pubsubclient.h>
+#include <PubSubClient.h>
 
 // direcciones IP, servidor, y MAC
 // necesarias para Ethernet Shield
@@ -146,4 +152,4 @@ void loop()
 {
     HandleMqtt();
 }
-</pubsubclient.h></ethernet.h>
+```

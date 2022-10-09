@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/marcha-imperia-arduino-stepper/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 typedef void(*PlayNoteCallback)(int note, int duration);
 
 class ImperialMarch
@@ -127,8 +128,9 @@ private:
 		delay(650);
 	}
 };
+```
 
-
+```csharp
 #include <./imperialMarch.hpp>
 
  ImperialMarch imperialMarch;
@@ -144,9 +146,10 @@ void loop()
 
    delay(500);
 }
+```
 
-
-#include <m5stickc.h>
+```csharp
+#include <M5StickC.h>
 
 #include <./imperialMarch.hpp>
 
@@ -176,8 +179,9 @@ void loop()
 
    delay(500);
 }
-</m5stickc.h>
+```
 
+```csharp
 #include <./imperialMarch.hpp>
 
 const int STEPPER1_STEP = 0;
@@ -215,3 +219,4 @@ void loop()
 
    delay(500);
 }
+```

@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/multitarea-en-arduino-blink-sin-delay/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 void setup() 
 {
    pinMode(LED_BUILTIN, OUTPUT);
@@ -16,8 +17,9 @@ void loop()
    digitalWrite(LED_BUILTIN, LOW);
    delay(1000);
 }
+```
 
-
+```cpp
 bool state = false;
 // Muestra valores para el debug
 void debug(char* text)
@@ -45,8 +47,9 @@ void toggleLed()
 	if (state) debug("ON");
 	if (!state) debug("OFF");
 }
+```
 
-
+```cpp
 //Blink without delay
 unsigned long interval = 1000;
 unsigned long previousMillis;
@@ -85,8 +88,9 @@ void switchLed()
 	if (state) debug("ON");
 	if (!state) debug("OFF");
 }
+```
 
-
+```cpp
 //Blink without delay multitarea
 unsigned long interval1 = 1000;
 unsigned long interval2 = 800;
@@ -131,8 +135,9 @@ void action2()
 {
 	debug("Action2");
 }
+```
 
-
+```cpp
 #include "AsyncTaskLib.h"
 
 AsyncTask asyncTask1(1000, []() { digitalWrite(LED_BUILTIN, HIGH); });
@@ -150,3 +155,4 @@ void loop()
 	asyncTask1.Update(asyncTask2);
 	asyncTask2.Update(asyncTask1);
 }
+```

@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-detector-gas-mq/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int MQ_PIN = 2;
 const int MQ_DELAY = 2000;
 
@@ -28,8 +29,9 @@ void loop()
   delay(MQ_DELAY);
 }
 
+```
 
-
+```cpp
 const int MQ_PIN = A0;
 const int MQ_DELAY = 2000;
 
@@ -51,8 +53,9 @@ void loop()
   delay(MQ_DELAY);
 }
 
+```
 
-
+```cpp
 const int MQ_PIN = A0;		// Pin del sensor
 const int RL_VALUE = 5;		// Resistencia RL del modulo en Kilo ohms
 const int R0 = 10;          // Resistencia R0 del sensor en Kilo ohms
@@ -95,4 +98,22 @@ void loop()
 float readMQ(int mq_pin)
 {
 	float rs = 0;
-	for (int i = 0;i<read_sample_times;i++) {="" rs="" +="getMQResistance(analogRead(mq_pin));" delay(read_sample_interval);="" }="" return="" rs="" read_sample_times;="" }="" obtener="" resistencia="" a="" partir="" de="" la="" lectura="" analogica="" float="" getmqresistance(int="" raw_adc)="" {="" return="" (((float)rl_value="" 1000.0*(1023="" -="" raw_adc)="" raw_adc));="" }="" obtener="" concentracion="" 10^(coord="" +="" scope="" *="" log="" (rs/r0)="" float="" getconcentration(float="" rs_ro_ratio)="" {="" return="" pow(10,="" coord="" +="" scope="" *="" log(rs_ro_ratio));="" }=""></read_sample_times;i++)>
+	for (int i = 0;i<READ_SAMPLE_TIMES;i++) {
+		rs += getMQResistance(analogRead(mq_pin));
+		delay(READ_SAMPLE_INTERVAL);
+	}
+	return rs / READ_SAMPLE_TIMES;
+}
+
+// Obtener resistencia a partir de la lectura analogica
+float getMQResistance(int raw_adc)
+{
+	return (((float)RL_VALUE / 1000.0*(1023 - raw_adc) / raw_adc));
+}
+
+// Obtener concentracion 10^(coord + scope * log (rs/r0)
+float getConcentration(float rs_ro_ratio)
+{
+	return pow(10, coord + scope * log(rs_ro_ratio));
+}
+```

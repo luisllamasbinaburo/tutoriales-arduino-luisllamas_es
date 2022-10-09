@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/como-conectar-dos-arduino-por-bus-i2c/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 #include "Wire.h"
 
 const byte I2C_SLAVE_ADDR = 0x20;
@@ -46,8 +47,9 @@ void requestToSlave()
 
 	Serial.println(response);
 }
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 #include "Wire.h"
 
 const byte I2C_SLAVE_ADDR = 0x20;
@@ -90,3 +92,4 @@ void loop() {
 		data = 0;
 	}
 }
+```

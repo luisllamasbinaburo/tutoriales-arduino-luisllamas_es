@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-sharp-gp2y0a02yk0f/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 const int sensorPin = A0;
 const long referenceMv = 5000;
 
@@ -40,3 +41,4 @@ int getDistance(int mV) {
 		return distance[index] - ((distance[index] - distance[index + 1]) * frac);
 	}
 }
+```

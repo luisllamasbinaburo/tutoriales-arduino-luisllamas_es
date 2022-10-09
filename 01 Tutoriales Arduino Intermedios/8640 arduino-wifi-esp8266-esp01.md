@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-wifi-esp8266-esp01/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 // La velocidad depende del modelo de ESP-01
 // siendo habituales 9600 y 115200
 const int baudRate = 9600;
@@ -30,8 +31,9 @@ void loop()
 		softSerial.print((char)Serial.read());
 	}
 }
+```
 
-
+```cpp
 //**** GENERAL ****
 // Acknowlege, se recive "ok"
 AT
@@ -105,8 +107,9 @@ AT+CIPMODE=1
 
 // Enviar data por el canal 4 (en el ejemplo 5 bytes)
 AT+CIPSEND=4,5
+```
 
-
+```cpp
 // Listar las redes WiFi y conectar a una de ella
 // sustituir SSID y PASSWORD por los parametros de la red
 AT+CWLAP
@@ -123,8 +126,9 @@ realizar un servidor
 AT+CWJAP=SSID,PASSWORD
 AT+CIPMUX=1
 AT+CIPSERVER=1,80
+```
 
-
+```cpp
 #include "SoftwareSerial.h"
 SoftwareSerial softSerial(2, 3); // RX, TX
 
@@ -161,20 +165,23 @@ void loop()
 		softSerial.print((char)Serial.read());
 	}
 }
+```
 
-
+```cpp
 #define ESP8266_USE_SOFTWARE_SERIAL
+```
 
-
+```cpp
 // En HardwareSerial.h
 #define SERIAL_BUFFER_SIZE 64
 
 // En SoftwareSerial.h
 #define _SS_MAX_RX_BUFF 64 // RX buffer size
+```
 
-
+```cpp
 #include "ESP8266.h"
-#include <softwareserial.h>
+#include <SoftwareSerial.h>
 
 const char* SSID = "myssid";
 const char* PASSWORD = "mypassword";
@@ -251,10 +258,11 @@ void loop(void)
 
 	while (1) delay(1000);
 }
-</softwareserial.h>
+```
 
+```cpp
 #include "ESP8266.h"
-#include <softwareserial.h>
+#include <SoftwareSerial.h>
 
 const char* SSID = "myssid";
 const char* PASSWORD = "mypassword";
@@ -342,10 +350,11 @@ void loop(void)
 		Serial.println();
 	}
 }
-</softwareserial.h>
+```
 
+```cpp
 #include "ESP8266.h"
-#include <softwareserial.h>
+#include <SoftwareSerial.h>
 
 const char* SSID = "myssid";
 const char* PASSWORD = "mypassword";
@@ -418,8 +427,8 @@ void loop(void)
 		wifiWrite("HTTP/1.1 200 OK\r\nnContent-Type: /html\r\nConnection: close\r\n\r\n");
 		wifiWrite("<html>\n<head>\n<title>Luis Llamas</title>\n</head>\n<body>");
 		wifiWrite("<h2>Salidas digitales</h2>");
-		wifiWrite("<button onclick="location.href='./?data=0'">ON</button>");
-		wifiWrite("<button onclick="location.href='./?data=1'">OFF</button>");
+		wifiWrite("<button onClick=location.href='./?data=0'>ON</button>");
+		wifiWrite("<button onClick=location.href='./?data=1'>OFF</button>");
 		wifiWrite("</body></html>");
 
 		Serial.println("Send finish");
@@ -444,4 +453,4 @@ void loop(void)
 		}
 	}
 }
-</softwareserial.h>
+```

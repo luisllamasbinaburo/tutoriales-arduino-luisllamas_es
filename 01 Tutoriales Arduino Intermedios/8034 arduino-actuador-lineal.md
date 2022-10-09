@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-actuador-lineal/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int pinRelayA = 8;
 const int pinRelayB = 9;
 
@@ -53,8 +54,9 @@ void stopActuator()
 	digitalWrite(pinRelayA, LOW);
 	digitalWrite(pinRelayB, LOW);
 }
+```
 
-
+```cpp
 const int pinRelayA = 8;
 const int pinRelayB = 9;
 const int sensorPin = A0;
@@ -139,3 +141,5 @@ void stopActuator()
 	digitalWrite(pinRelayA, LOW);
 	digitalWrite(pinRelayB, LOW);
 }
+
+```

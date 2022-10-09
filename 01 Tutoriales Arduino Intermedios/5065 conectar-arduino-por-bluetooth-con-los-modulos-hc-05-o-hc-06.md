@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/conectar-arduino-por-bluetooth-con-los
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int led = 13;
 
 int option;
@@ -23,4 +24,13 @@ void loop(){
     {
       //restamos el valor '0' para obtener el numero enviado
       option -= '0';
-      for(int i=0;i<option;i++){ digitalwrite(led,="" high);="" delay(100);="" digitalwrite(led,="" low);="" delay(200);="" }="" }="" }="" }=""></option;i++){>
+      for(int i=0;i<option;i++){
+         digitalWrite(led, HIGH);
+         delay(100);
+         digitalWrite(led, LOW);
+         delay(200);
+      }
+    }
+  }
+}
+```

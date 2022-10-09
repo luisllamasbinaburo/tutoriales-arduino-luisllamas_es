@@ -4,7 +4,8 @@ Enlace entrada: https://www.luisllamas.es/lector-de-huellas-dactilares-con-ardui
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <adafruit_fingerprint.h>
+```csharp
+#include <Adafruit_Fingerprint.h>
 
 
 #if (defined(__AVR__) || defined(ESP8266)) && !defined(__AVR_ATmega2560__)
@@ -218,9 +219,10 @@ uint8_t getFingerprintEnroll() {
 
   return true;
 }
-</adafruit_fingerprint.h>
+```
 
-#include <adafruit_fingerprint.h>
+```csharp
+#include <Adafruit_Fingerprint.h>
 
 
 #if (defined(__AVR__) || defined(ESP8266)) && !defined(__AVR_ATmega2560__)
@@ -366,4 +368,4 @@ int getFingerprintIDez() {
   Serial.print(" with confidence of "); Serial.println(finger.confidence);
   return finger.fingerID;
 }
-</adafruit_fingerprint.h>
+```

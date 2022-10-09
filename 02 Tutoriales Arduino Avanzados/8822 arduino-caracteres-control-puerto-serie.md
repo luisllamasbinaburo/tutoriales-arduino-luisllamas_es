@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-caracteres-control-puerto-seri
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const char STX = '\x002';
 const char ETX = '\x003';
 
@@ -23,8 +24,9 @@ void setup()
 void loop() 
 {
 }
+```
 
-
+```cpp
 const char STX = '\x002';
 const char ETX = '\x003';
 
@@ -52,3 +54,4 @@ void loop()
     }
   }
 }
+```

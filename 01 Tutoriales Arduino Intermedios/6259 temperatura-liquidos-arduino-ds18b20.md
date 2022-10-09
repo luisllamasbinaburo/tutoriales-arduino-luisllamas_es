@@ -4,8 +4,9 @@ Enlace entrada: https://www.luisllamas.es/temperatura-liquidos-arduino-ds18b20/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <onewire.h>
-#include <dallastemperature.h>
+```csharp
+#include <OneWire.h>
+#include <DallasTemperature.h>
 
 const int oneWirePin = 5;
 
@@ -27,9 +28,10 @@ void loop() {
 
 	delay(1000); 
 }
-</dallastemperature.h></onewire.h>
+```
 
-#include <onewire.h>
+```csharp
+#include <OneWire.h>
 
 const int oneWirePin = 5;
 OneWire oneWireBus(oneWirePin);
@@ -71,10 +73,11 @@ void discoverOneWireDevices(void) {
 void loop(void) {
   // nada que hacer aqui
 }
-</onewire.h>
+```
 
-#include <onewire.h>
-#include <dallastemperature.h>
+```csharp
+#include <OneWire.h>
+#include <DallasTemperature.h>
 
 const int oneWirePin = 5;
 
@@ -117,4 +120,4 @@ void loop(void)
   
   delay(2000);
 }
-</dallastemperature.h></onewire.h>
+```

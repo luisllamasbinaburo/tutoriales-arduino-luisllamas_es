@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/usar-un-interruptor-magnetico-con-ardu
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int pinSensor = 2;
 const int pinLED = 13;
 
@@ -24,3 +25,4 @@ void loop() {
 
   delay(1000);
 }
+```

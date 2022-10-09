@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/medir-temperatura-con-arduino-y-termis
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 #include <math.h>
 
 const int Rc = 10000; //valor de la resistencia
@@ -40,4 +41,4 @@ void loop()
   Serial.print("C\n");
   delay(2500);
 }
-</math.h>
+```

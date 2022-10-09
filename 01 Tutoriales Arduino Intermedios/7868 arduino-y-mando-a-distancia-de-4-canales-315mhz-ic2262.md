@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-y-mando-a-distancia-de-4-canal
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 // D0 - 8
 // D1 - 9
 // D2 - 10
@@ -45,3 +46,5 @@ void loop()
 		delay(1500);
 	}
 	delay(10);
+
+```

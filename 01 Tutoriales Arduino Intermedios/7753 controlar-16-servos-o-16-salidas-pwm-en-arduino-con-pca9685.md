@@ -4,11 +4,12 @@ Enlace entrada: https://www.luisllamas.es/controlar-16-servos-o-16-salidas-pwm-e
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 //SCL -> A5
 //SDA -> A4
 
-#include <wire.h>
-#include <adafruit_pwmservodriver.h>
+#include <Wire.h>
+#include <Adafruit_PWMServoDriver.h>
 
 Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver(0x40);
 
@@ -31,13 +32,14 @@ void loop()
 		}
 	}
 }
-</adafruit_pwmservodriver.h></wire.h>
+```
 
+```cpp
 //SCL -> A5
 //SDA -> A4
 
-#include <wire.h>
-#include <adafruit_pwmservodriver.h>
+#include <Wire.h>
+#include <Adafruit_PWMServoDriver.h>
 
 Adafruit_PWMServoDriver servoController = Adafruit_PWMServoDriver(0x40); 
 
@@ -72,14 +74,15 @@ void loop()
 	delay(1000);
 }
 
-</adafruit_pwmservodriver.h></wire.h>
+```
 
+```cpp
 
 //SCL -> A5
 //SDA -> A4
 
-#include <wire.h>
-#include <adafruit_pwmservodriver.h>
+#include <Wire.h>
+#include <Adafruit_PWMServoDriver.h>
 
 Adafruit_PWMServoDriver servoController = Adafruit_PWMServoDriver(0x40);
 
@@ -123,4 +126,4 @@ void loop()
 	}
 	delay(1000);
 }
-</adafruit_pwmservodriver.h></wire.h>
+```

@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-paso-bajo-exponencial/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 float EMA_ALPHA = 0.6;
 int EMA_LP = 0;
 int EMA_HP = 0;
@@ -53,3 +54,4 @@ int EMAHighPassFilter(int value)
 
 	return EMA_HP;
 }
+```

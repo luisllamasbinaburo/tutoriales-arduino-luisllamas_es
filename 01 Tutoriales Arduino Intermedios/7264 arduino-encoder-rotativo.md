@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-encoder-rotativo/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int channelPinA = 9;
 const int channelPinB = 10;
 
@@ -66,8 +67,9 @@ void loop() {
 	
 	// Otras tareas
 }
+```
 
-
+```cpp
 const int channelPinA = 2;
 const int channelPinB = 10;
 
@@ -114,8 +116,9 @@ void doEncode()
 		timeCounter = millis();
 	}
 }
+```
 
-
+```cpp
 const int channelPinA = 2;
 const int channelPinB = 3;
 
@@ -182,3 +185,4 @@ void doEncodeB()
 		timeCounter = millis();
 	}
 }
+```

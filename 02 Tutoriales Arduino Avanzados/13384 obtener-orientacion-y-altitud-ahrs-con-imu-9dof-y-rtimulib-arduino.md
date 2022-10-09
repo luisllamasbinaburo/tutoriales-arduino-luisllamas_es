@@ -4,12 +4,13 @@ Enlace entrada: https://www.luisllamas.es/obtener-orientacion-y-altitud-ahrs-con
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <wire.h>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+#include <Wire.h>
 #include "I2Cdev.h"
 #include "RTIMUSettings.h"
 #include "RTIMU.h"
 #include "CalLib.h"
-#include <eeprom.h>
+#include <EEPROM.h>
 
 RTIMU *imu;                                           // the IMU object
 RTIMUSettings settings;                               // the settings object
@@ -78,15 +79,16 @@ void loop()
     }
   }
 }
-</eeprom.h></wire.h>
+```
 
-#include <wire.h>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+#include <Wire.h>
 #include "I2Cdev.h"
 #include "RTIMUSettings.h"
 #include "RTIMU.h"
 #include "RTFusionRTQF.h" 
 #include "CalLib.h"
-#include <eeprom.h>
+#include <EEPROM.h>
 
 RTIMU *imu;                                           // the IMU object
 RTFusionRTQF fusion;                                  // the fusion object
@@ -143,8 +145,9 @@ void loop()
         }
     }
 }
-</eeprom.h></wire.h>
+```
 
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 import processing.serial.*;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
@@ -205,3 +208,4 @@ void serialEvent (Serial myPort) {
     }
   }
 }
+```

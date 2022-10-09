@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/detectar-campos-magneticos-con-arduino
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int HALLPin = 5;
 const int LEDPin = 13;
 
@@ -22,3 +23,4 @@ void loop() {
     digitalWrite(LEDPin, LOW);
   }
 }
+```

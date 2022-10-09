@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-dht11-dht22/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 #include "DHT.h"
 
 // Uncomment whatever type you're using!
@@ -50,3 +51,4 @@ void loop() {
 	Serial.print(t);
 	Serial.print(" *C ");
 }
+```

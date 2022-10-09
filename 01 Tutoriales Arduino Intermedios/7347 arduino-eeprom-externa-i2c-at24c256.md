@@ -4,12 +4,13 @@ Enlace entrada: https://www.luisllamas.es/arduino-eeprom-externa-i2c-at24c256/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 //Vcc - 5V
 //GND - GND
 //SDA - A4
 //SCL - A5
 
-#include <wire.h>
+#include <Wire.h>
 const int eepromAddress = 0x50;
 
 
@@ -93,4 +94,4 @@ void loop()
 	delay(20000);
 }
 
-</wire.h>
+```

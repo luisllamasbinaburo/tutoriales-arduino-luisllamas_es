@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/controlar-un-ventilador-con-arduino/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int pin = 9;
 
 void setup() {
@@ -17,8 +18,9 @@ void loop(){
   delay(10000);               // esperar 10 segundos
 
 }
+```
 
-
+```cpp
 const int pin = 9;
 
 const float thresholdLOW = 20.0;
@@ -51,3 +53,4 @@ void loop(){
 
    delay(5000);  // esperar 5 segundos entre mediciones
  }
+```

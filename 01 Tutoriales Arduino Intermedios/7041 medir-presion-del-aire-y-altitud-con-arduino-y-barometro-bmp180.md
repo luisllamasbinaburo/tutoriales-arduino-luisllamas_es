@@ -4,8 +4,9 @@ Enlace entrada: https://www.luisllamas.es/medir-presion-del-aire-y-altitud-con-a
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <sfe_bmp180.h>
-#include <wire.h>
+```cpp
+#include <SFE_BMP180.h>
+#include <Wire.h>
 
 SFE_BMP180 bmp180;
 
@@ -53,10 +54,11 @@ void loop()
   } 
   delay(1000);
 }
-</wire.h></sfe_bmp180.h>
+```
 
-#include <sfe_bmp180.h>
-#include <wire.h>
+```cpp
+#include <SFE_BMP180.h>
+#include <Wire.h>
 
 SFE_BMP180 bmp180;
 
@@ -111,10 +113,11 @@ void loop()
   } 
   delay(1000);
 }
-</wire.h></sfe_bmp180.h>
+```
 
-#include <sfe_bmp180.h>
-#include <wire.h>
+```cpp
+#include <SFE_BMP180.h>
+#include <Wire.h>
 
 SFE_BMP180 bmp180;
 
@@ -184,4 +187,4 @@ void loop()
   delay(1000);
 }
 
-</wire.h></sfe_bmp180.h>
+```

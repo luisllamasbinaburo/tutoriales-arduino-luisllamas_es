@@ -4,12 +4,15 @@ Enlace entrada: https://www.luisllamas.es/que-son-y-como-usar-interrupciones-en-
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 attachInterrupt(interrupt, ISR, mode);
+```
 
-
+```csharp
 attachInterrupt(digitalPinToInterrupt(pin), ISR, mode);
+```
 
-
+```csharp
 const int emuPin = 10;
 
 const int LEDPin = 13;
@@ -35,8 +38,9 @@ void blink() {
 	state = !state;
 	digitalWrite(LEDPin, state);
 }
+```
 
-
+```csharp
 const int emuPin = 10;
 
 const int intPin = 2;
@@ -74,3 +78,4 @@ void interruptCount()
 	ISRCounter++;
 	timeCounter = millis();
 }
+```

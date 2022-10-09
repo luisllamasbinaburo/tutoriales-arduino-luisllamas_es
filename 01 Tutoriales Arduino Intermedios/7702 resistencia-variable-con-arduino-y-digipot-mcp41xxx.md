@@ -4,11 +4,12 @@ Enlace entrada: https://www.luisllamas.es/resistencia-variable-con-arduino-y-dig
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 //SCK > D13
 //SI  > D11
 //CS  > D10
 
-#include <spi.h>
+#include <SPI.h>
 const byte address = 0x11;
 const int CS = 10;
 
@@ -53,4 +54,4 @@ void loop()
 	}
 	delay(2000);
 }
-</spi.h>
+```

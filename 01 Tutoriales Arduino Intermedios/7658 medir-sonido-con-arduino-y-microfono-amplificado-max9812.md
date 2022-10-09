@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/medir-sonido-con-arduino-y-microfono-a
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int sensorPIN = A0;
 const int sampleWindow = 50; // Ancho ventana en mS (50 mS = 20Hz)
 
@@ -40,3 +41,4 @@ void loop()
    double volts = (peakToPeak * 5.0) / 1024;  // Convertir a tensión
    Serial.println(volts);
 }
+```

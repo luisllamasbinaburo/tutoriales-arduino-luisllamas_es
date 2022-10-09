@@ -4,7 +4,8 @@ Enlace entrada: https://www.luisllamas.es/como-hacer-un-control-pid-de-iluminaci
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <pidcontroller.hpp>
+```csharp
+#include <PIDController.hpp>
 
 const long A = 1000; //Resistencia en oscuridad en KΩ
 const int B = 15; //Resistencia a la luz (10 Lux) en KΩ
@@ -48,4 +49,4 @@ void loop()
 
     analogWrite(PIN_LED, (int) pidController.Output);
 }
-</pidcontroller.hpp>
+```

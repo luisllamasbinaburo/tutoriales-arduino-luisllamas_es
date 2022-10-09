@@ -4,8 +4,9 @@ Enlace entrada: https://www.luisllamas.es/medir-tensiones-de-220v-230v-con-ardui
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <wire.h>
-#include <adafruit_ads1015.h>
+```cpp
+#include <Wire.h>
+#include <Adafruit_ADS1015.h>
 
 Adafruit_ADS1115 ads;
 
@@ -29,8 +30,9 @@ void loop()
     Serial.print(ads.readADC_Differential_0_1() * multiplier); 
   }
 }
-</adafruit_ads1015.h></wire.h>
+```
 
+```cpp
 const int sensorPin = A0;
 int sensorValue;
 float value; 
@@ -53,3 +55,4 @@ float fmap(float x, float in_min, float in_max, float out_min, float out_max)
 {
  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
+```

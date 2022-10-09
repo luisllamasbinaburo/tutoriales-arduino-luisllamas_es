@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/salidas-analogicas-pwm-en-arduino/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int analogOutPin = 11; // Analog output pin
 
 byte outputValue = 0;        // valor del PWM
@@ -16,8 +17,9 @@ void loop() {
 	delay(10);
 	outputValue++;
 }
+```
 
-
+```cpp
 const int analogOutPin = 11; // Analog output pin that the LED is attached to
 byte outputValue = 0;  
 
@@ -47,8 +49,9 @@ ISR(PCINT0_vect)
 		bitClear(PORTB, 5); // LED off  
 	} 
 } 
+```
 
-
+```cpp
 const int analogOutPin = 11;
 byte outputValue = 0;  
 
@@ -86,4 +89,5 @@ ISR(PCINT0_vect)
    { 
       bitClear(PORTB, 5); // LED off  
    } 
-}
+} 
+```

@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/nuestro-primer-programa-en-arduino/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 //Zona DECLARACIONES
 
 void setup() {
@@ -13,8 +14,9 @@ void setup() {
 void loop() {
   // Zona funcion LOOP  
 }
+```
 
-
+```csharp
 const int pinLED= 13;		//asignar variable led como 13
 
 void setup() {                
@@ -27,3 +29,4 @@ void loop() {
   digitalWrite(pinLED, LOW);    // apagar LED
   delay(1000);                  // esperar un segundo
 }
+```

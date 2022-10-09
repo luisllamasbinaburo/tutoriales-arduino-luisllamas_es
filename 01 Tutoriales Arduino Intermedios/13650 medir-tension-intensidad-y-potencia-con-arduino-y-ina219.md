@@ -4,8 +4,9 @@ Enlace entrada: https://www.luisllamas.es/medir-tension-intensidad-y-potencia-co
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <wire.h>
-#include <adafruit_ina219.h>
+```cpp
+#include <Wire.h>
+#include <Adafruit_INA219.h>
 
 Adafruit_INA219 ina219;
 
@@ -50,4 +51,4 @@ void loop(void)
 
   delay(2000);
 }
-</adafruit_ina219.h></wire.h>
+```

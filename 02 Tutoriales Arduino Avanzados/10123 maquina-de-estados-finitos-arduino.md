@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/maquina-de-estados-finitos-arduino/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 enum State
 {
   PosicionA,
@@ -145,8 +146,9 @@ void changeState(int newState)
     default: break;
   }
 }
+```
 
-
+```cpp
 enum State
 {
   PosicionA,
@@ -245,8 +247,9 @@ void readInput()
     }
   }
 }
+```
 
-
+```cpp
 #include "StateMachineLib.h"
 
 enum State
@@ -307,7 +310,7 @@ void setup()
 
 void loop() 
 {
-	input = static_cast<input>(readInput());
+	input = static_cast<Input>(readInput());
 
 	stateMachine.Update();
 }
@@ -358,3 +361,4 @@ void outputD()
 	Serial.println("            X");
 	Serial.println();
 }
+```

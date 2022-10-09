@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/brujula-magnetica-con-arduino-compass-
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 //GND - GND
 //VCC - VCC
 //SDA - Pin A4
@@ -38,8 +39,9 @@ void loop()
     Serial.println(mz);
     delay(100);
 }
+```
 
-
+```cpp
 //GND - GND
 //VCC - VCC
 //SDA - Pin A4
@@ -77,3 +79,4 @@ void loop() {
     Serial.print("N:");
     Serial.println(angulo,0);  
 }
+```

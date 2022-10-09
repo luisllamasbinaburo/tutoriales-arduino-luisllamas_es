@@ -4,7 +4,8 @@ Enlace entrada: https://www.luisllamas.es/controla-arduino-con-el-mando-inalambr
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <ps2x_lib.h>
+```csharp
+#include <PS2X_lib.h>
 
 PS2X ps2x;
 
@@ -103,4 +104,4 @@ void loop(){
 
 	delay(500);  
 }
-</ps2x_lib.h>
+```

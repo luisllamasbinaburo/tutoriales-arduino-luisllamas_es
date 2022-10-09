@@ -4,10 +4,11 @@ Enlace entrada: https://www.luisllamas.es/comunicacion-inalambrica-a-2-4ghz-con-
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <nrf24l01.h>
-#include <rf24.h>
-#include <rf24_config.h>
-#include <spi.h>
+```cpp
+#include <nRF24L01.h>
+#include <RF24.h>
+#include <RF24_config.h>
+#include <SPI.h>
 
 const int pinCE = 9;
 const int pinCSN = 10;
@@ -29,12 +30,13 @@ void loop(void)
 	radio.write(data, sizeof data);
 	delay(1000);
 }
-</spi.h></rf24_config.h></rf24.h></nrf24l01.h>
+```
 
-#include <nrf24l01.h>
-#include <rf24.h>
-#include <rf24_config.h>
-#include <spi.h>
+```cpp
+#include <nRF24L01.h>
+#include <RF24.h>
+#include <RF24_config.h>
+#include <SPI.h>
 
 const int pinCE = 9;
 const int pinCSN = 10;
@@ -61,11 +63,12 @@ void loop(void)
 		Serial.println(data);
 	}
 }
-</spi.h></rf24_config.h></rf24.h></nrf24l01.h>
+```
 
-#include <spi.h>
-#include <nrf24l01.h>
-#include <rf24.h>
+```cpp
+#include <SPI.h>
+#include <nRF24L01.h>
+#include <RF24.h>
  
 const int pinCE = 9;
 const int pinCSN = 10;
@@ -90,11 +93,12 @@ void loop()
 	radio.write(data, sizeof data);
 	delay(1000);
 }
-</rf24.h></nrf24l01.h></spi.h>
+```
 
-#include <spi.h>
-#include <nrf24l01.h>
-#include <rf24.h>
+```cpp
+#include <SPI.h>
+#include <nRF24L01.h>
+#include <RF24.h>
  
 const int pinCE = 9;
 const int pinCSN = 10;
@@ -126,4 +130,4 @@ void loop()
 	}
 	delay(1000);
 }
-</rf24.h></nrf24l01.h></spi.h>
+```

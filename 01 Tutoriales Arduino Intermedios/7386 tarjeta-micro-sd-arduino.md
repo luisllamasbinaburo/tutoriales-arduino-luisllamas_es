@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/tarjeta-micro-sd-arduino/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 // Iniciar la SD
 SD.begin(cspin);
 
@@ -23,8 +24,9 @@ SD.mkdir(directory);
 
 // Eliminar un directorio
 SD.rmdir(dirname);
+```
 
-
+```cpp
 // Obtener el tamaño de un fichero
 file.size()
 
@@ -49,9 +51,10 @@ file.seek(pos)
 
 // Cerrar el fichero
 file.close()
+```
 
-
-#include <sd.h>
+```cpp
+#include <SD.h>
 
 File dataFile;
 
@@ -87,9 +90,10 @@ void setup()
 void loop()
 {
 }
-</sd.h>
+```
 
-#include <sd.h>
+```cpp
+#include <SD.h>
 
 File logFile;
 
@@ -132,4 +136,4 @@ void loop()
   }
   delay(500);
 }
-</sd.h>
+```

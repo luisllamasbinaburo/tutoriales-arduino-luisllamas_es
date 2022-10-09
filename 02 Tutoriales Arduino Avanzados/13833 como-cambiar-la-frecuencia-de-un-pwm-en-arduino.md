@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/como-cambiar-la-frecuencia-de-un-pwm-e
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 //Atmega 328p (Arduino Uno, Nano)
 // Frecuencias
 // 5, 6 	Timer0	62500 Hz
@@ -60,8 +61,9 @@ void setPWMPrescaler(uint8_t pin, uint16_t prescale) {
     TCCR2B = TCCR2B & 0b11111000 | mode;
   }
 }
+```
 
-
+```cpp
 // Atmega 32U
 // Frecuencias
 // 3, 11	Timer0	64500Hz
@@ -133,3 +135,4 @@ void setPWMPrescaler(uint8_t pin, uint16_t prescale)
     TCCR4B = TCCR4B & 0b11110000 | mode;
   }
 }
+```

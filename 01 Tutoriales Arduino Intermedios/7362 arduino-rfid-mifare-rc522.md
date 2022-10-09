@@ -4,14 +4,15 @@ Enlace entrada: https://www.luisllamas.es/arduino-rfid-mifare-rc522/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 //RST	        D9
 //SDA(SS)      D10
 //MOSI         D11
 //MISO         D12
 //SCK          D13
 
-#include <spi.h>
-#include <mfrc522.h>
+#include <SPI.h>
+#include <MFRC522.h>
 
 const int RST_PIN = 9;				// Pin 9 para el reset del RC522
 const int SS_PIN = 10;				// Pin 10 para el SS (SDA) del RC522
@@ -48,16 +49,17 @@ void loop()
 	}
 	delay(250);
 }
-</mfrc522.h></spi.h>
+```
 
+```cpp
 //RST          D9
 //SDA(SS)      D10
 //MOSI         D11
 //MISO         D12
 //SCK          D13
 
-#include <spi.h>
-#include <mfrc522.h>
+#include <SPI.h>
+#include <MFRC522.h>
 
 const int RST_PIN = 9;        // Pin 9 para el reset del RC522
 const int SS_PIN = 10;        // Pin 10 para el SS (SDA) del RC522
@@ -101,16 +103,17 @@ void loop() {
   delay(250);
 
 }
-</mfrc522.h></spi.h>
+```
 
+```cpp
 //RST	        D9
 //SDA(SS)      D10
 //MOSI         D11
 //MISO         D12
 //SCK          D13
 
-#include <spi.h>
-#include <mfrc522.h>
+#include <SPI.h>
+#include <MFRC522.h>
 
 const int RST_PIN = 9;
 const int SS_PIN = 10;
@@ -193,4 +196,4 @@ void loop()
 	// Stop encryption on PCD
 	mfrc522.PCD_StopCrypto1();
 }
-</mfrc522.h></spi.h>
+```

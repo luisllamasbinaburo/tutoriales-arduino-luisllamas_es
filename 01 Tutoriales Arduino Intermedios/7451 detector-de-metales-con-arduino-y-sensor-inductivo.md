@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/detector-de-metales-con-arduino-y-sens
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 const int sensorPin = 9;
 
 void setup()
@@ -23,3 +24,4 @@ void loop()
    }
    delay(1000);
 }
+```

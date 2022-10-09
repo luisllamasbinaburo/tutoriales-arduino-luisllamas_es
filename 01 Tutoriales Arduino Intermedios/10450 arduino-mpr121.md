@@ -4,7 +4,8 @@ Enlace entrada: https://www.luisllamas.es/arduino-mpr121/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <wire.h>
+```cpp
+#include <Wire.h>
 #include "Adafruit_MPR121.h"
 
 Adafruit_MPR121 mpr121 = Adafruit_MPR121();
@@ -60,4 +61,4 @@ void loop()
 
 	lasttouched = currtouched;
 }
-</wire.h>
+```

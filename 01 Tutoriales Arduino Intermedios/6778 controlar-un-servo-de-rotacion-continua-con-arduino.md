@@ -4,7 +4,8 @@ Enlace entrada: https://www.luisllamas.es/controlar-un-servo-de-rotacion-continu
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <servo.h>
+```csharp
+#include <Servo.h>
 
 Servo myservo;  // crea el objeto servo
 
@@ -30,4 +31,4 @@ void loop() {
 	myservo.write(vel);              
 	delay(1500); 
 }
-</servo.h>
+```

@@ -4,13 +4,14 @@ Enlace entrada: https://www.luisllamas.es/arduino-acelerometro-adxl345/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 // Gnd      -  GND
 // 3.3v     -  VCC
 // 3.3v     -  CS
 // Analog 4 -  SDA
 // Analog 5 -  SLC
 
-#include <wire.h>
+#include <Wire.h>
 
 //Direccion del dispositivo
 const int DEVICE_ADDRESS = (0x53);  
@@ -85,11 +86,12 @@ void readFrom(int device, byte address, int num, byte _buff[]) {
   }
   Wire.endTransmission();
 }
-</wire.h>
+```
 
-#include <spi.h>
-#include <wire.h>
-#include <sparkfun_adxl345.h> 
+```cpp
+#include <SPI.h>
+#include <Wire.h>
+#include <SparkFun_ADXL345.h> 
 
 ADXL345 adxl = ADXL345();
 
@@ -116,4 +118,4 @@ void loop()
 }
 
 
-</sparkfun_adxl345.h></wire.h></spi.h>
+```

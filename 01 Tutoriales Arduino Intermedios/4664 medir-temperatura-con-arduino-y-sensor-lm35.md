@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/medir-temperatura-con-arduino-y-sensor
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int sensorPin= A0;
 
 void setup()
@@ -20,3 +21,5 @@ void loop()
   Serial.println(" C");
   delay(1000);
 }
+
+```

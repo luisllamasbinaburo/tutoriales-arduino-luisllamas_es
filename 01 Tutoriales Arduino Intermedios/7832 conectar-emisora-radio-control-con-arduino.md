@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/conectar-emisora-radio-control-con-ard
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 int rcPins[6] = {5,6,7,8,9,10};
 float chValue[6];
 
@@ -48,3 +49,4 @@ void loop()
   printChannel();
   delay(2500);
 }
+```

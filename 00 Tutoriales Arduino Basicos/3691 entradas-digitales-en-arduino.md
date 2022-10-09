@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/entradas-digitales-en-arduino/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 int pin = 2;
 int value = 0;
 
@@ -24,3 +25,4 @@ void loop(){
   }
   delay(1000);
 }
+```

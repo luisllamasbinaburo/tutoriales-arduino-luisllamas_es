@@ -4,9 +4,10 @@ Enlace entrada: https://www.luisllamas.es/matriz-led-arduino-max7219/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <spi.h>
-#include <adafruit_gfx.h>
-#include <max72xxpanel.h>
+```csharp
+#include <SPI.h>
+#include <Adafruit_GFX.h>
+#include <Max72xxPanel.h>
 
 //Vcc - Vcc
 //Gnd - Gnd
@@ -76,4 +77,4 @@ void loop() {
       delay(wait);
    }
 }
-</max72xxpanel.h></adafruit_gfx.h></spi.h>
+```

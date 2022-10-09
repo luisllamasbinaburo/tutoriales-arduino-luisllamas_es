@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/interrupciones-en-todos-los-pines-de-a
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 // Activar PCINT en un PIN
 void pciSetup(byte pin)
 {
@@ -40,11 +41,12 @@ void setup()
 void loop() 
 {
 }
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 #define PCINT_PIN A5
 
-#include <yetanotherpcint.h>
+#include <YetAnotherPcInt.h>
 
 void pinChanged(const char* message, bool pinstate) {
   Serial.print(message);
@@ -58,4 +60,4 @@ void setup() {
 }
 
 void loop() {}
-</yetanotherpcint.h>
+```

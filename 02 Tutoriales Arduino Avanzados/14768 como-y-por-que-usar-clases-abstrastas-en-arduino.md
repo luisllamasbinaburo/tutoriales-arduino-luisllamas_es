@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/como-y-por-que-usar-clases-abstrastas-
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 #include "libs/AudioLibraries.hpp"
 #include "libs/TFTLibraries.hpp"
 #include "libs/SDLibraries.hpp"
@@ -71,8 +72,9 @@ void loop()
 	// FInal
 	Draw();
 }
-</std::string>
+```
 
+```cpp
 #pragma once
 
 class Audio_Hard
@@ -82,8 +84,9 @@ public:
 	{
 	}
 };
+```
 
-
+```cpp
 #pragma once
 
 #include "libs/AudioLibraries.hpp"
@@ -147,8 +150,9 @@ public:
 		sd.DoSomething();
 	}
 };
-</std::string>
+```
 
+```cpp
 #include "MP3Player.hpp"
 
 MP3Player mp3Player;
@@ -166,8 +170,9 @@ void loop()
 
 	mp3Player.Draw();
 }
+```
 
-
+```cpp
 #pragma once
 
 class Mp3Player
@@ -200,8 +205,9 @@ public:
 	{
 	}
 };
-</std::string>
+```
 
+```cpp
 #pragma once
 
 #include "Mp3Player.hpp"
@@ -234,8 +240,9 @@ public:
 		DrawList();
 	}
 };
+```
 
-
+```cpp
 #include "libs/AudioLibraries.hpp"
 #include "libs/TFTLibraries.hpp"
 #include "libs/SDLibraries.hpp"
@@ -261,8 +268,9 @@ void loop()
 	
 	mp3PlayerUI.Draw();
 }
+```
 
-
+```cpp
 #pragma once
 
 class IMp3Player
@@ -278,8 +286,9 @@ public:
 	virtual void NextSong() = 0;
 	virtual void PrevSong() = 0;
 };
-</std::string>
+```
 
+```cpp
 #pragma once
 
 #include "IMp3Player.hpp"
@@ -314,8 +323,9 @@ public:
 	{
 	}
 };
-</std::string>
+```
 
+```cpp
 #pragma once
 
 #include "IMp3Player.hpp"
@@ -348,8 +358,9 @@ public:
 		DrawList();
 	}
 };
+```
 
-
+```cpp
 #pragma once
 
 #include "IMp3Player.hpp"
@@ -388,8 +399,9 @@ public:
 		Serial.println("LoadPlaylistFromSD");
 	}
 };
+```
 
-
+```cpp
 #pragma once
 
 class IPlaylistFillerService
@@ -414,8 +426,9 @@ public:
 		_sd.DoSomething();
 	}
 };
+```
 
-
+```cpp
 #include "libs/AudioLibraries.hpp"
 #include "libs/TFTLibraries.hpp"
 #include "libs/SDLibraries.hpp"
@@ -444,3 +457,4 @@ void loop()
 	
 	mp3PlayerUI.Draw();
 }
+```

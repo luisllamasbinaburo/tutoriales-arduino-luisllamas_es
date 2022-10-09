@@ -4,9 +4,10 @@ Enlace entrada: https://www.luisllamas.es/sensor-ambiental-arduino-bme280/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <wire.h>
-#include <spi.h>
-#include <adafruit_bme280.h>
+```cpp
+#include <Wire.h>
+#include <SPI.h>
+#include <Adafruit_BME280.h>
 
 Adafruit_BME280 bme; // use I2C interface
 Adafruit_Sensor *bme_temp = bme.getTemperatureSensor();
@@ -48,4 +49,4 @@ void loop() {
   Serial.println();
   delay(1000);
 }
-</adafruit_bme280.h></spi.h></wire.h>
+```

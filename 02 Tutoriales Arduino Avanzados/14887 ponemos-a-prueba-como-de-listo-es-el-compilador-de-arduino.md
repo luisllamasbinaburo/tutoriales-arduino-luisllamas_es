@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/ponemos-a-prueba-como-de-listo-es-el-c
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 void printResults(unsigned long long counter, unsigned long long rst, unsigned long long microseconds)
 {
 	Serial.print("benchmark ");
@@ -41,23 +42,27 @@ void loop()
 	delay(5000);
 	benchmark();
 }
+```
 
-
+```cpp
 benchmark 1000000: 1000000 1us
+```
 
-
+```cpp
 unsigned long counter = 1000000;
 unsigned long sum = 0;
 for (size_t i = 0; i < counter; i++)
 {
 	sum += 3;
 }
+```
 
-
+```cpp
 benchmark 1000000: 3000000 1us
 benchmark 1000000000: 3000000 1us
+```
 
-
+```cpp
 const int value = 5;
 unsigned long counter = 1000000;
 unsigned long sum = 0;
@@ -65,11 +70,13 @@ for (size_t i = 0; i < counter; i++)
 {
 	sum += value;
 }
+```
 
-
+```cpp
 benchmark 1000000: 50000000 1us
+```
 
-
+```cpp
 int value = 10;
 unsigned long counter = 1000000;
 unsigned long sum = 0;
@@ -77,11 +84,13 @@ for (size_t i = 0; i < counter; i++)
 {
 	sum += value;
 }
+```
 
-
+```cpp
 benchmark 1000000: 50000000 1us
+```
 
-
+```cpp
 int givemeNumber()
 {
 	return 3;
@@ -102,11 +111,13 @@ void benchmark()
 	auto microseconds = finish - start;
 	printResults(counter, 0, microseconds);
 }
+```
 
-
+```cpp
 benchmark 1000000: 3000000 1us
+```
 
-
+```cpp
 void benchmark()
 {
 	unsigned long counter = 1000000;
@@ -116,19 +127,22 @@ void benchmark()
 		sum += i;
 	}
 }
+```
 
-
+```cpp
 6	1783293664	8393
+```
 
-
+```cpp
 unsigned long counter = 1000000;
 unsigned long sum = 0;
 for (size_t i = 0; i < counter; i++)
 {
 	sum += random(10);
 }
+```
 
-
+```cpp
 void benchmark()
 {
 	auto start = micros();
@@ -144,11 +158,13 @@ void benchmark()
 	auto microseconds = finish - start;
 	printResults(counter, 0, microseconds);  // no estamos usando sum
 }
+```
 
-
+```cpp
 benchmark 1000000: 0 0us
+```
 
-
+```cpp
 void benchmark()
 {
 	auto start = micros();
@@ -164,11 +180,13 @@ void benchmark()
 	auto microseconds = finish - start;
 	printResults(counter, 0, microseconds);
 }
+```
 
-
+```cpp
 benchmark 1000000: 0 681200us
+```
 
-
+```cpp
 void benchmark()
 {
 	auto counter = 1000000;
@@ -178,6 +196,8 @@ void benchmark()
 		sum += i;
 	}
 }
+```
 
-
+```cpp
 benchmark 1000000: 1783293664 8393us
+```

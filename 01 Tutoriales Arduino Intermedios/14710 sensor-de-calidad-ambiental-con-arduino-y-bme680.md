@@ -4,9 +4,10 @@ Enlace entrada: https://www.luisllamas.es/sensor-de-calidad-ambiental-con-arduin
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <wire.h>
-#include <spi.h>
-#include <adafruit_sensor.h>
+```cpp
+#include <Wire.h>
+#include <SPI.h>
+#include <Adafruit_Sensor.h>
 #include "Adafruit_BME680.h"
 
 const int BME_SCK = 13;
@@ -64,8 +65,9 @@ void loop() {
     Serial.println();
     delay(2000);
 }
-</adafruit_sensor.h></spi.h></wire.h>
+```
 
+```csharp
 
     #include "bsec.h"
 
@@ -169,3 +171,4 @@ void loop() {
       digitalWrite(LED_BUILTIN, LOW);
       delay(100);
     }
+```

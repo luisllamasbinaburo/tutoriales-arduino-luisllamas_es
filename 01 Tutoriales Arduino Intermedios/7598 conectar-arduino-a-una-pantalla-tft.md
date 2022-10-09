@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/conectar-arduino-a-una-pantalla-tft/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 /***************************************************
 This is our GFX example for the Adafruit ILI9341 Breakout and Shield
 ----> http://www.adafruit.com/products/1651
@@ -158,7 +159,84 @@ unsigned long testLines(uint16_t color) {
 	x1 = y1 = 0;
 	y2 = h - 1;
 	start = micros();
-	for (x2 = 0; x2<w; x2="" +="6)" ili9341.drawline(x1,="" y1,="" x2,="" y2,="" color);="" x2="w" -="" 1;="" for="" (y2="0;"></w;><h; y2="" +="6)" ili9341.drawline(x1,="" y1,="" x2,="" y2,="" color);="" t="micros()" -="" start;="" fillscreen="" doesn't="" count="" against="" timing="" ili9341.fillscreen(ili9341_black);="" x1="w" -="" 1;="" y1="0;" y2="h" -="" 1;="" start="micros();" for="" (x2="0;"></h;><w; x2="" +="6)" ili9341.drawline(x1,="" y1,="" x2,="" y2,="" color);="" x2="0;" for="" (y2="0;"></w;><h; y2="" +="6)" ili9341.drawline(x1,="" y1,="" x2,="" y2,="" color);="" t="" +="micros()" -="" start;="" ili9341.fillscreen(ili9341_black);="" x1="0;" y1="h" -="" 1;="" y2="0;" start="micros();" for="" (x2="0;"></h;><w; x2="" +="6)" ili9341.drawline(x1,="" y1,="" x2,="" y2,="" color);="" x2="w" -="" 1;="" for="" (y2="0;"></w;><h; y2="" +="6)" ili9341.drawline(x1,="" y1,="" x2,="" y2,="" color);="" t="" +="micros()" -="" start;="" ili9341.fillscreen(ili9341_black);="" x1="w" -="" 1;="" y1="h" -="" 1;="" y2="0;" start="micros();" for="" (x2="0;"></h;><w; x2="" +="6)" ili9341.drawline(x1,="" y1,="" x2,="" y2,="" color);="" x2="0;" for="" (y2="0;"></w;><h; y2="" +="6)" ili9341.drawline(x1,="" y1,="" x2,="" y2,="" color);="" return="" micros()="" -="" start;="" }="" unsigned="" long="" testfastlines(uint16_t="" color1,="" uint16_t="" color2)="" {="" unsigned="" long="" start;="" int="" x,="" y,="" w="ILI9341.width()," h="ILI9341.height();" ili9341.fillscreen(ili9341_black);="" start="micros();" for="" (y="0;"></h;><h; y="" +="5)" ili9341.drawfasthline(0,="" y,="" w,="" color1);="" for="" (x="0;"></h;><w; x="" +="5)" ili9341.drawfastvline(x,="" 0,="" h,="" color2);="" return="" micros()="" -="" start;="" }="" unsigned="" long="" testrects(uint16_t="" color)="" {="" unsigned="" long="" start;="" int="" n,="" i,="" i2,="" cx="ILI9341.width()" 2,="" cy="ILI9341.height()" 2;="" ili9341.fillscreen(ili9341_black);="" n="min(ILI9341.width()," ili9341.height());="" start="micros();" for="" (i="2;"></w;><n; i="" +="6)" {="" i2="i" 2;="" ili9341.drawrect(cx="" -="" i2,="" cy="" -="" i2,="" i,="" i,="" color);="" }="" return="" micros()="" -="" start;="" }="" unsigned="" long="" testfilledrects(uint16_t="" color1,="" uint16_t="" color2)="" {="" unsigned="" long="" start,="" t="0;" int="" n,="" i,="" i2,="" cx="ILI9341.width()" 2="" -="" 1,="" cy="ILI9341.height()" 2="" -="" 1;="" ili9341.fillscreen(ili9341_black);="" n="min(ILI9341.width()," ili9341.height());="" for="" (i="n;" i="">0; i -= 6) {
+	for (x2 = 0; x2<w; x2 += 6) ILI9341.drawLine(x1, y1, x2, y2, color);
+	x2 = w - 1;
+	for (y2 = 0; y2<h; y2 += 6) ILI9341.drawLine(x1, y1, x2, y2, color);
+	t = micros() - start; // fillScreen doesn't count against timing
+
+	ILI9341.fillScreen(ILI9341_BLACK);
+
+	x1 = w - 1;
+	y1 = 0;
+	y2 = h - 1;
+	start = micros();
+	for (x2 = 0; x2<w; x2 += 6) ILI9341.drawLine(x1, y1, x2, y2, color);
+	x2 = 0;
+	for (y2 = 0; y2<h; y2 += 6) ILI9341.drawLine(x1, y1, x2, y2, color);
+	t += micros() - start;
+
+	ILI9341.fillScreen(ILI9341_BLACK);
+
+	x1 = 0;
+	y1 = h - 1;
+	y2 = 0;
+	start = micros();
+	for (x2 = 0; x2<w; x2 += 6) ILI9341.drawLine(x1, y1, x2, y2, color);
+	x2 = w - 1;
+	for (y2 = 0; y2<h; y2 += 6) ILI9341.drawLine(x1, y1, x2, y2, color);
+	t += micros() - start;
+
+	ILI9341.fillScreen(ILI9341_BLACK);
+
+	x1 = w - 1;
+	y1 = h - 1;
+	y2 = 0;
+	start = micros();
+	for (x2 = 0; x2<w; x2 += 6) ILI9341.drawLine(x1, y1, x2, y2, color);
+	x2 = 0;
+	for (y2 = 0; y2<h; y2 += 6) ILI9341.drawLine(x1, y1, x2, y2, color);
+
+	return micros() - start;
+}
+
+unsigned long testFastLines(uint16_t color1, uint16_t color2) {
+	unsigned long start;
+	int           x, y, w = ILI9341.width(), h = ILI9341.height();
+
+	ILI9341.fillScreen(ILI9341_BLACK);
+	start = micros();
+	for (y = 0; y<h; y += 5) ILI9341.drawFastHLine(0, y, w, color1);
+	for (x = 0; x<w; x += 5) ILI9341.drawFastVLine(x, 0, h, color2);
+
+	return micros() - start;
+}
+
+unsigned long testRects(uint16_t color) {
+	unsigned long start;
+	int           n, i, i2,
+		cx = ILI9341.width() / 2,
+		cy = ILI9341.height() / 2;
+
+	ILI9341.fillScreen(ILI9341_BLACK);
+	n = min(ILI9341.width(), ILI9341.height());
+	start = micros();
+	for (i = 2; i<n; i += 6) {
+		i2 = i / 2;
+		ILI9341.drawRect(cx - i2, cy - i2, i, i, color);
+	}
+
+	return micros() - start;
+}
+
+unsigned long testFilledRects(uint16_t color1, uint16_t color2) {
+	unsigned long start, t = 0;
+	int           n, i, i2,
+		cx = ILI9341.width() / 2 - 1,
+		cy = ILI9341.height() / 2 - 1;
+
+	ILI9341.fillScreen(ILI9341_BLACK);
+	n = min(ILI9341.width(), ILI9341.height());
+	for (i = n; i>0; i -= 6) {
 		i2 = i / 2;
 		start = micros();
 		ILI9341.fillRect(cx - i2, cy - i2, i, i, color1);
@@ -176,7 +254,60 @@ unsigned long testFilledCircles(uint8_t radius, uint16_t color) {
 
 	ILI9341.fillScreen(ILI9341_BLACK);
 	start = micros();
-	for (x = radius; x<w; x="" +="r2)" {="" for="" (y="radius;"></w;><h; y="" +="r2)" {="" ili9341.fillcircle(x,="" y,="" radius,="" color);="" }="" }="" return="" micros()="" -="" start;="" }="" unsigned="" long="" testcircles(uint8_t="" radius,="" uint16_t="" color)="" {="" unsigned="" long="" start;="" int="" x,="" y,="" r2="radius" *="" 2,="" w="ILI9341.width()" +="" radius,="" h="ILI9341.height()" +="" radius;="" screen="" is="" not="" cleared="" for="" this="" one="" --="" this="" is="" intentional="" and="" does="" not="" affect="" the="" reported="" time.="" start="micros();" for="" (x="0;"></h;><w; x="" +="r2)" {="" for="" (y="0;"></w;><h; y="" +="r2)" {="" ili9341.drawcircle(x,="" y,="" radius,="" color);="" }="" }="" return="" micros()="" -="" start;="" }="" unsigned="" long="" testtriangles()="" {="" unsigned="" long="" start;="" int="" n,="" i,="" cx="ILI9341.width()" 2="" -="" 1,="" cy="ILI9341.height()" 2="" -="" 1;="" ili9341.fillscreen(ili9341_black);="" n="min(cx," cy);="" start="micros();" for="" (i="0;"></h;><n; i="" +="5)" {="" ili9341.drawtriangle(="" cx,="" cy="" -="" i,="" peak="" cx="" -="" i,="" cy="" +="" i,="" bottom="" left="" cx="" +="" i,="" cy="" +="" i,="" bottom="" right="" ili9341.color565(0,="" 0,="" i));="" }="" return="" micros()="" -="" start;="" }="" unsigned="" long="" testfilledtriangles()="" {="" unsigned="" long="" start,="" t="0;" int="" i,="" cx="ILI9341.width()" 2="" -="" 1,="" cy="ILI9341.height()" 2="" -="" 1;="" ili9341.fillscreen(ili9341_black);="" start="micros();" for="" (i="min(cx," cy);="" i="">10; i -= 5) {
+	for (x = radius; x<w; x += r2) {
+		for (y = radius; y<h; y += r2) {
+			ILI9341.fillCircle(x, y, radius, color);
+		}
+	}
+
+	return micros() - start;
+}
+
+unsigned long testCircles(uint8_t radius, uint16_t color) {
+	unsigned long start;
+	int           x, y, r2 = radius * 2,
+		w = ILI9341.width() + radius,
+		h = ILI9341.height() + radius;
+
+	// Screen is not cleared for this one -- this is
+	// intentional and does not affect the reported time.
+	start = micros();
+	for (x = 0; x<w; x += r2) {
+		for (y = 0; y<h; y += r2) {
+			ILI9341.drawCircle(x, y, radius, color);
+		}
+	}
+
+	return micros() - start;
+}
+
+unsigned long testTriangles() {
+	unsigned long start;
+	int           n, i, cx = ILI9341.width() / 2 - 1,
+		cy = ILI9341.height() / 2 - 1;
+
+	ILI9341.fillScreen(ILI9341_BLACK);
+	n = min(cx, cy);
+	start = micros();
+	for (i = 0; i<n; i += 5) {
+		ILI9341.drawTriangle(
+			cx, cy - i, // peak
+			cx - i, cy + i, // bottom left
+			cx + i, cy + i, // bottom right
+			ILI9341.color565(0, 0, i));
+	}
+
+	return micros() - start;
+}
+
+unsigned long testFilledTriangles() {
+	unsigned long start, t = 0;
+	int           i, cx = ILI9341.width() / 2 - 1,
+		cy = ILI9341.height() / 2 - 1;
+
+	ILI9341.fillScreen(ILI9341_BLACK);
+	start = micros();
+	for (i = min(cx, cy); i>10; i -= 5) {
 		start = micros();
 		ILI9341.fillTriangle(cx, cy - i, cx - i, cy + i, cx + i, cy + i,
 			ILI9341.color565(0, i, i));
@@ -197,11 +328,27 @@ unsigned long testRoundRects() {
 	ILI9341.fillScreen(ILI9341_BLACK);
 	w = min(ILI9341.width(), ILI9341.height());
 	start = micros();
-	for (i = 0; i<w; i="" +="6)" {="" i2="i" 2;="" ili9341.drawroundrect(cx="" -="" i2,="" cy="" -="" i2,="" i,="" i,="" i="" 8,="" ili9341.color565(i,="" 0,="" 0));="" }="" return="" micros()="" -="" start;="" }="" unsigned="" long="" testfilledroundrects()="" {="" unsigned="" long="" start;="" int="" i,="" i2,="" cx="ILI9341.width()" 2="" -="" 1,="" cy="ILI9341.height()" 2="" -="" 1;="" ili9341.fillscreen(ili9341_black);="" start="micros();" for="" (i="min(ILI9341.width()," ili9341.height());="" i="">20; i -= 6) {
+	for (i = 0; i<w; i += 6) {
+		i2 = i / 2;
+		ILI9341.drawRoundRect(cx - i2, cy - i2, i, i, i / 8, ILI9341.color565(i, 0, 0));
+	}
+
+	return micros() - start;
+}
+
+unsigned long testFilledRoundRects() {
+	unsigned long start;
+	int           i, i2,
+		cx = ILI9341.width() / 2 - 1,
+		cy = ILI9341.height() / 2 - 1;
+
+	ILI9341.fillScreen(ILI9341_BLACK);
+	start = micros();
+	for (i = min(ILI9341.width(), ILI9341.height()); i>20; i -= 6) {
 		i2 = i / 2;
 		ILI9341.fillRoundRect(cx - i2, cy - i2, i, i, i / 8, ILI9341.color565(0, i, 0));
 	}
 
 	return micros() - start;
 }
-</w;></n;></n;>
+```

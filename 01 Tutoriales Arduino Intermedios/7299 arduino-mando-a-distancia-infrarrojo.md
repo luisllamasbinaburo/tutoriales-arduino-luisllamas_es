@@ -4,7 +4,8 @@ Enlace entrada: https://www.luisllamas.es/arduino-mando-a-distancia-infrarrojo/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <irremote.h>
+```cpp
+#include <IRremote.h>
 
 const int RECV_PIN = 9;
 
@@ -25,9 +26,10 @@ void loop()
 		irrecv.resume();
 	}
 }
-</irremote.h>
+```
 
-#include <irremote.h>
+```cpp
+#include <IRremote.h>
 
 const int KEY_UP = 0xFF629D;
 const int KEY_LEFT = 0xFF22DD;
@@ -123,4 +125,4 @@ void loop()
 		irrecv.resume();
 	}
 }
-</irremote.h>
+```

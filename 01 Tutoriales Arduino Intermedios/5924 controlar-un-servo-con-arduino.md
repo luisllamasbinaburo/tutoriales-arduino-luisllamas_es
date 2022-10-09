@@ -4,7 +4,8 @@ Enlace entrada: https://www.luisllamas.es/controlar-un-servo-con-arduino/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <servo.h>
+```csharp
+#include <Servo.h>
 
 Servo myservo;  // crea el objeto servo
 
@@ -29,4 +30,4 @@ void loop() {
 		delay(15);                       
 	}
 }
-</servo.h>
+```

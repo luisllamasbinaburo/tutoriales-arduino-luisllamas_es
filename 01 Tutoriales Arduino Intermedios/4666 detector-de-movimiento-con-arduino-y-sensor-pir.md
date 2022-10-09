@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/detector-de-movimiento-con-arduino-y-s
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int LEDPin= 13;
 const int PIRPin= 2;
 
@@ -29,8 +30,9 @@ void loop()
     digitalWrite(LEDPin, LOW);
   }
 }
+```
 
-
+```cpp
 const int LEDPin = 13;        // pin para el LED
 const int PIRPin = 2;         // pin de entrada (for PIR sensor)
 
@@ -66,3 +68,4 @@ void loop()
 		}
 	}
 }
+```

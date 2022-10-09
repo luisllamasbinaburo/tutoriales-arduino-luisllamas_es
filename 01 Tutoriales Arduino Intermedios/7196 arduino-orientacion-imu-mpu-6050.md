@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-orientacion-imu-mpu-6050/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 //GND - GND
 //VCC - VCC
 //SDA - Pin A4
@@ -53,8 +54,9 @@ void loop()
 	
 	delay(100);
 }
+```
 
-
+```cpp
 //GND - GND
 //VCC - VCC
 //SDA - Pin A4
@@ -110,8 +112,9 @@ void loop()
  
    delay(100);
 }
+```
 
-
+```cpp
 //GND - GND
 //VCC - VCC
 //SDA - Pin A4
@@ -151,8 +154,9 @@ void loop()
 	Serial.println(accel_ang_y);
 	delay(10);
 }
+```
 
-
+```cpp
 //GND - GND
 //VCC - VCC
 //SDA - Pin A4
@@ -207,8 +211,9 @@ void loop()
 
 	delay(10);
 }
+```
 
-
+```cpp
 //GND - GND
 //VCC - VCC
 //SDA - Pin A4
@@ -269,8 +274,9 @@ void loop()
 
 	delay(10);
 }
+```
 
-
+```cpp
 //GND - GND
 //VCC - VCC
 //SDA - Pin A4
@@ -426,8 +432,9 @@ void loop() {
 	Serial.println(aaReal.z);
     }
 }
+```
 
-
+```cpp
 // Arduino sketch that returns calibration offsets for MPU6050 
 //   Version 1.1  (31th January 2014)
 // Done by Luis Ródenas <luisrodenaslorda@gmail.com>
@@ -644,4 +651,4 @@ void calibration(){
     if (ready==6) break;
   }
 }
-</jeff@rowberg.net></luisrodenaslorda@gmail.com>
+```

@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-mediana/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 int values100[] = { 3, 53, 70, 56, 18, 85, 27, 14, 37, 94, 9, 55, 40, 60, 52, 61, 15, 65, 13, 8, 57, 97, 69, 4, 35, 82, 22, 73, 59, 68, 78, 24, 21, 36, 71, 80, 74, 39, 17, 12, 29, 76, 49, 51, 30, 90, 88, 2, 84, 50, 62, 28, 77, 43, 5, 16, 58, 26, 32, 34, 1, 75, 66, 95, 38, 89, 67, 87, 100, 54, 92, 81, 25, 83, 46, 33, 23, 45, 96, 99, 79, 48, 11, 31, 7, 6, 19, 91, 93, 44, 47, 98, 86, 41, 63, 20, 72, 10, 42, 64 };
 int values100Length = sizeof(values100) / sizeof(int);
 
@@ -47,7 +48,8 @@ void QuickSortAsc(int* arr, const int left, const int right)
 	int pivot = arr[(left + right) / 2];
 	while (i <= j)
 	{
-		while (arr[i]<pivot) i++;="" while="" (arr[j]="">pivot) j--;
+		while (arr[i]<pivot) i++;
+		while (arr[j]>pivot) j--;
 		if (i <= j)
 		{
 			tmp = arr[i];
@@ -58,8 +60,15 @@ void QuickSortAsc(int* arr, const int left, const int right)
 		}
 	};
 
-	if (left<j) quicksortasc(arr,="" left,="" j);="" if=""></j)><right) quicksortasc(arr,="" i,="" right);="" }=""></right)></pivot)>
+	if (left<j)
+		QuickSortAsc(arr, left, j);
+	if (i<right)
+		QuickSortAsc(arr, i, right);
+}
 
+```
+
+```cpp
 #define ELEM_SWAP(a,b) { register float t=(a);(a)=(b);(b)=t; }
 
 int values100[] = { 3, 53, 70, 56, 18, 85, 27, 14, 37, 94, 9, 55, 40, 60, 52, 61, 15, 65, 13, 8, 57, 97, 69, 4, 35, 82, 22, 73, 59, 68, 78, 24, 21, 36, 71, 80, 74, 39, 17, 12, 29, 76, 49, 51, 30, 90, 88, 2, 84, 50, 62, 28, 77, 43, 5, 16, 58, 26, 32, 34, 1, 75, 66, 95, 38, 89, 67, 87, 100, 54, 92, 81, 25, 83, 46, 33, 23, 45, 96, 99, 79, 48, 11, 31, 7, 6, 19, 91, 93, 44, 47, 98, 86, 41, 63, 20, 72, 10, 42, 64 };
@@ -140,8 +149,9 @@ int QuickSelectMedian(int arr[], uint16_t n)
 	}
 	return arr[median];
 }
+```
 
-
+```cpp
 int values100[] = { 3, 53, 70, 56, 18, 85, 27, 14, 37, 94, 9, 55, 40, 60, 52, 61, 15, 65, 13, 8, 57, 97, 69, 4, 35, 82, 22, 73, 59, 68, 78, 24, 21, 36, 71, 80, 74, 39, 17, 12, 29, 76, 49, 51, 30, 90, 88, 2, 84, 50, 62, 28, 77, 43, 5, 16, 58, 26, 32, 34, 1, 75, 66, 95, 38, 89, 67, 87, 100, 54, 92, 81, 25, 83, 46, 33, 23, 45, 96, 99, 79, 48, 11, 31, 7, 6, 19, 91, 93, 44, 47, 98, 86, 41, 63, 20, 72, 10, 42, 64 };
 int values100Length = sizeof(values100) / sizeof(int);
 
@@ -187,4 +197,24 @@ int wirth_kth_smallest(int a[], int n, int k)
 	int x;
 	l = 0;
 	m = n - 1;
-	while (l<m) {="" x="a[k];" i="l;" j="m;" do="" {="" while=""></m)><x) i++;="" while=""></x)><a[j]) j--;="" if="" (i="" <="j)" {="" elem_swap(a[i],="" a[j]);="" i++;="" j--;="" }="" }="" while="" (i="" <="j);" if=""></a[j])><k) l="i;" if=""></k)><i) m="j;" }="" return="" a[k];="" }=""></i)>
+	while (l<m)
+	{
+		x = a[k];
+		i = l;
+		j = m;
+		do {
+			while (a[i]<x) i++;
+			while (x<a[j]) j--;
+			if (i <= j)
+			{
+				ELEM_SWAP(a[i], a[j]);
+				i++;
+				j--;
+			}
+		} while (i <= j);
+		if (j<k) l = i;
+		if (k<i) m = j;
+	}
+	return a[k];
+}
+```

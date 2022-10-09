@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/medir-distancia-con-arduino-y-sensor-d
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int EchoPin = 5;
 const int TriggerPin = 6;
 
@@ -34,9 +35,10 @@ int ping(int TriggerPin, int EchoPin) {
 	distanceCm = duration * 10 / 292/ 2;   //convertimos a distancia, en cm
 	return distanceCm;
 }
+```
 
-
-#include <newping.h>
+```cpp
+#include <NewPing.h>
 
 const int UltrasonicPin = 5;
 const int MaxDistance = 200;
@@ -52,4 +54,4 @@ void loop() {
   Serial.print(sonar.ping_cm()); // obtener el valor en cm (0 = fuera de rango)
   Serial.println("cm");
 }
-</newping.h>
+```

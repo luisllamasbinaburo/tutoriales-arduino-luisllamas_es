@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-i2c/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 Wire.begin()  // Inicializa el hardware del bus
 Wire.beginTransmission(address); //Comienza la transmisión
 Wire.endTransmission(); // Finaliza la transmisión
@@ -14,8 +15,9 @@ Wire.read();   // Recibe un byte
 
 Wire.onReceive(handler); // Registra una función de callback al recibir un dato
 Wire.onRequest(handler); // Registra una función de callback al solicitar un dato
+```
 
-
+```cpp
 #include "Wire.h"
 
 extern "C" { 
@@ -57,3 +59,4 @@ void loop()
 {
     delay(1000);
 }
+```

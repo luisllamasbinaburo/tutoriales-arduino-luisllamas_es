@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/medir-temperatura-y-presion-barometric
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 Adafruit_BMP280 bmp;
 
 void setup() {
@@ -39,3 +40,4 @@ void loop()
     Serial.println();
     delay(2000);
 }
+```

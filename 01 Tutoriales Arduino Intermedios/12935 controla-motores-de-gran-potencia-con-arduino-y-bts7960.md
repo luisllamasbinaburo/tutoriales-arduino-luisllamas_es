@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/controla-motores-de-gran-potencia-con-
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 #include "BTS7960.h"
 
 const uint8_t EN = 8;
@@ -37,3 +38,4 @@ void loop()
   motorController.Disable();
   delay(5000);
 }
+```

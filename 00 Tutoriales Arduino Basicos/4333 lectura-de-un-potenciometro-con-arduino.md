@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/lectura-de-un-potenciometro-con-arduin
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int analogPin = A0;
 int value;      //variable que almacena la lectura analógica raw
 int position;   //posicion del potenciometro en tanto por ciento
@@ -19,3 +20,4 @@ void loop() {
 
 	delay(1000);
 }
+```

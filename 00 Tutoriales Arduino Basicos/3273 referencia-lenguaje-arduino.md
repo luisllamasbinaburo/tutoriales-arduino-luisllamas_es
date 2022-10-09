@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/referencia-lenguaje-arduino/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 //x igual a y
 x == y
 
@@ -21,8 +22,9 @@ x <= y
 
 //x mayor o igual que y
 x >= y 
+```
 
-
+```cpp
 //operador de asignación
 a = b
 
@@ -40,8 +42,9 @@ a / b
 
 //modulo
 a % b
+```
 
-
+```cpp
 //and binario
 a & b  
 
@@ -59,8 +62,9 @@ a << b
 
 //desplazamiento a derecha
 a >> b 
+```
 
-
+```cpp
 //incremento
 a++
 
@@ -84,8 +88,9 @@ a &= b
 
 //or compuesto
 a |= b
+```
 
-
+```cpp
 //not
 !a
 
@@ -94,23 +99,27 @@ a && b
 
 //or
 a || b
+```
 
-
+```cpp
 //operacion indirección
 *variable
 
 //operacion dirección
 &variable
+```
 
-
+```cpp
 //tipo vacio (solo para funciones)
 void
+```
 
-
+```cpp
 //booleano, false o true
 boolean = false;
+```
 
-
+```cpp
 //entero, 16 bits, de -32,768 a 32,767
 int var = 100;
 
@@ -125,29 +134,33 @@ long var = 100000L;
 
 //entero, 32bits, de 0 a 4,294,967,295
 unsigned long var = 100000L;
+```
 
-
+```cpp
 //coma floante, 32 bits, de -3.4028235E+38 a 3.4028235E+38. Precision 6 digitos
 float var = 1.117;
 
 //idéntico a float, excepto en Arduino Due donde es flotante de 64 bits
 double var = 1.117;
+```
 
-
+```cpp
 //8 bits, de 0 a 255
 byte var = B10010;
 
 //16bits, sin signo, de 0 a 65535
 word var = 10000;
+```
 
-
+```cpp
 //8 bits, de -128 a 127
 char var = 'A';
 
 //8 bits, de 0 a 255
 unsigned char var = 240;
+```
 
-
+```cpp
 //convierte a char
 char(variable);
 
@@ -165,8 +178,9 @@ long(variable);
 
 //convierte a float
 float(variable);
+```
 
-
+```cpp
 //STATIC
 //Variables visibles únicamente en el interior de una función,
 //y cuyo valor se mantiene entre llamadas a la misma.
@@ -183,8 +197,9 @@ const float pi = 3.14;
 //modificado por otro proceso que se ejecuta concurrentemente con el actual 
 //(por ejemplo cuando se emplean hilos o interrupciones)
 volatile int variable = LOW;
+```
 
-
+```cpp
 //declarar vector
 int miArray[5];
 
@@ -193,15 +208,17 @@ int miArray[] = {2, 4, 8, 3, 6};
 
 //declarar e iniciar vector
 int miArray[5] = {2, 4, -8, 3, 2};
+```
 
-
+```cpp
 //asignar valor a elemento del vector
 miArray[0] = 10;
 
 //obtener valor de elemento del vector
 x = miArray[4];
+```
 
-
+```cpp
 char cadena1[15];
 char cadena2[8]  = {'a', 'r', 'd', 'u', 'i', 'n', 'o'};
 char cadena3[8]  = {'a', 'r', 'd', 'u', 'i', 'n', 'o', '\0'};
@@ -212,8 +229,9 @@ char cadena6[15] = "texto";
 //vector de cadenas
 char* cadenaArray[]={"Cadena 1", "Cadena 2", "Cadena 3",
 "Cadena 4", "Cadena 5", "Cadena 6"};
+```
 
-
+```cpp
 // literal de cadena de texto
 String txtMsg = "Hola";
 
@@ -225,11 +243,13 @@ String txtMsg =  String("Texto");
 
 // concatenando dos literales a String
 String txtMsg =  String("texto1" + "texto2");
+```
 
-
+```cpp
 condition ? true : false;
+```
 
-
+```cpp
 if (variable < 10)
 {
 	// accion A
@@ -258,8 +278,9 @@ else
 {
 	// accion C
 }
+```
 
-
+```cpp
 switch (variable) {
 	case 1:
 	  // accion A
@@ -270,28 +291,32 @@ switch (variable) {
 	default: 
 	  // caso por defecto (opcional)
 }
+```
 
-
+```cpp
 for (int i=0; i <= 100; i++){
 	// accion
 } 
+```
 
-
+```cpp
 variable = 0;
 
 while(variable < 100){
 	// accion
 	variable++;
 }
+```
 
-
+```cpp
 do
 {
 	//accion
 	variable++;
 } while (variable < 100);
+```
 
-
+```cpp
 //devuelve mínimo entra a y b
 min(a,b);
 
@@ -306,22 +331,25 @@ constrain(x, a, b);
 
 //interpola linealmente y entre x1,y1 x2,y2
 map(x, x1, x2, y1, y2);
+```
 
-
+```cpp
 //devuelve a^b (ambos tipo float)
 pow(a,b);
 
 //devuelve la raiz cuadrada de a
 sqrt(a);
+```
 
-
+```cpp
 //inicializa la semilla del generador de numeros pseudo aleatorios
 randomSeed(semilla);
 
 //devuelve un numero aleatorio entre a y b (ambos tipo long)
 random(a, b);
+```
 
-
+```cpp
 //devuelve el seno de a (a tipo float y en radianes)
 sin(a);
 
@@ -330,8 +358,9 @@ cos(a);
 
 //devuelve la tangente de a (a tipo float y en radianes)
 tan(a);
+```
 
-
+```cpp
 //devuelve el byte menos signiticativo de una palabra o variable.
 lowByte(variable);
 
@@ -355,8 +384,9 @@ bitClear(x, n);
 
 //obtiene el valor del bit n (idéntico a 2^n)
 bit(n);
+```
 
-
+```cpp
 //delvuelve el caracter en la posición 3 (idéntico a txtMsg[3];)
 txtMsg.charAt(3);
 
@@ -380,8 +410,9 @@ txtMsg.trim();
 
 //devuelve la cadena de texto como entero
 txtMsg.toInt();
+```
 
-
+```cpp
 //compara dos cadenas. Devuelve 1 si texto1 es mayor que texto2,
 //0 si son iguales, y -1 en caso contrario 
 texto1.compareTo(texto2);
@@ -391,8 +422,9 @@ texto1.equals(texto2);
 
 //compara si dos cadenas son iguales, ignorando mayúsculas y minúsculas
 texto1.equalsIgnoreCase(texto2);
+```
 
-
+```cpp
 //devuelve una subcadena de la posicion 3 a la 10
 txtMsg.substring(3, 10);
 
@@ -401,8 +433,9 @@ txtMsg.startsWith("texto", 3);
 
 //comprueba si la cadena empieza por "texto", con offset 3
 txtMsg.endsWith("texto");
+```
 
-
+```cpp
 //devuelve el índice de la primera ocurrencia de 'A',
 //a partir de la posición offset
 txtMsg.indexOf('A', offset);
@@ -413,8 +446,9 @@ txtMsg.lastIndexOf('A', offset);
 
 //sustituye las ocurrencias de "texto1" por "texto2"
 txtMsg.replace("texto1", "texto2");
+```
 
-
+```cpp
 int option=1;
 
 int cambiar(){
@@ -430,8 +464,9 @@ void loop(){
   Serial.print(option);  //muestra 4
   delay(10000);
 }
+```
 
-
+```cpp
 int cambiar(var){
   var=4;
 }
@@ -446,8 +481,9 @@ void loop(){
   Serial.print(option);  //muestra 1
   delay(10000);
 }
+```
 
-
+```cpp
 int cambiar(int &var){
   var=4;
 }
@@ -462,8 +498,9 @@ void loop(){
   Serial.print(option);    //muestra 4
   delay(10000);
 }
+```
 
-
+```cpp
 int cambiar(int* var){
   *var=4;
 }
@@ -478,8 +515,9 @@ void loop(){
   Serial.print(option);    //muestra 4
   delay(10000);
 }
+```
 
-
+```cpp
 int cambiar(){
   int var=4;
   return var;
@@ -495,8 +533,9 @@ void loop(){
   Serial.print(option);    //muestra 4
   delay(10000);
 }
+```
 
-
+```cpp
 //declaracion
 enum miEnumeracion {
   opcion1,
@@ -510,8 +549,9 @@ miEnumeracion variable = opcion2;
 if (variable==opcion2){
   //accion
 }
+```
 
-
+```cpp
 //declaracion
 struct miEstructura
 {
@@ -524,8 +564,9 @@ struct miEstructura
 struct miEstructura variable;
 
 variable.campo1=10;
+```
 
-
+```cpp
 //declaraciones
 typedef int nuevotipo;
 typedef enum miEnumeracion nuevotipo;
@@ -533,8 +574,9 @@ typedef struct miEstructura nuevotipo;
 
 //ejemplo de uso
 nuevotipo variable;
+```
 
-
+```cpp
 class MiRobot;
 
 //definicion de clase ejemplo
@@ -587,3 +629,4 @@ void loop(){
   robot.sayCont();	//muestra el valor
   delay(1000);
 }
+```

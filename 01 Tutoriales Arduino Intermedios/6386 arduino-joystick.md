@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-joystick/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 GND - GND
 Vcc - 5v
 VRx - A0
@@ -41,3 +42,4 @@ void loop() {
 	Serial.println(buttonValue);
 	delay(1000);
 }
+```

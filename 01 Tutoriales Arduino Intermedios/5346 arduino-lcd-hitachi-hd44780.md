@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-lcd-hitachi-hd44780/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 /* Conexión
 PIN2 - LCD4 (RS)
 PIN3 - LCD5 (R/W)
@@ -15,7 +16,7 @@ PIN10 - LCD13 (D6)
 PIN11 - LCD14 (D7)
 */
 
-#include <liquidcrystal.h>			
+#include <LiquidCrystal.h>			
 
 LiquidCrystal lcd(2, 3, 4, 8, 9, 10, 11); //(RS,RW, E, D4,D5, D6, D7)
 
@@ -38,8 +39,9 @@ void loop()
 	lcd.cursor();
 	delay(500);
 }
-</liquidcrystal.h>
+```
 
+```cpp
 /* Conexión
 PIN2 - LCD4 (RS)
 PIN3 - LCD5 (R/W)
@@ -50,7 +52,7 @@ PIN9 - LCD12 (D5)
 PIN10 - LCD13 (D6)
 PIN11 - LCD14 (D7)
 */	
-#include <liquidcrystal.h>
+#include <LiquidCrystal.h>
 
 LiquidCrystal lcd(2, 3, 4, 8, 9, 10, 11); //(RS,RW, E, D4,D5, D6, D7)
 
@@ -87,4 +89,4 @@ void loop() {
   delay(1000);
 }
 
-</liquidcrystal.h>
+```

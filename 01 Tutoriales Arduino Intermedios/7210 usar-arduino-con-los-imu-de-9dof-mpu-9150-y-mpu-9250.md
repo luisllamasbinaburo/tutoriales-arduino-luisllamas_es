@@ -4,12 +4,13 @@ Enlace entrada: https://www.luisllamas.es/usar-arduino-con-los-imu-de-9dof-mpu-9
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 //GND - GND
 //VCC - VCC
 //SDA - Pin A4
 //SCL - Pin A5
 
-#include <wire.h>
+#include <Wire.h>
 
 #define    MPU9250_ADDRESS            0x68
 #define    MAG_ADDRESS                0x0C
@@ -131,4 +132,4 @@ void loop()
 	
 	delay(10);    
 }
-</wire.h>
+```

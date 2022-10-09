@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/caudal-consumo-de-agua-con-arduino-y-c
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int sensorPin = 2;
 const int measureInterval = 2500;
 volatile int pulseConter;
@@ -54,8 +55,9 @@ void loop()
 	Serial.print(flow_Lmin, 3);
 	Serial.println(" (L/min)");
 }
+```
 
-
+```cpp
 const int sensorPin = 2;
 const int measureInterval = 2500;
 volatile int pulseConter;
@@ -117,3 +119,4 @@ void loop()
 	Serial.print(volume, 1);
 	Serial.println(" (L)");
 }
+```

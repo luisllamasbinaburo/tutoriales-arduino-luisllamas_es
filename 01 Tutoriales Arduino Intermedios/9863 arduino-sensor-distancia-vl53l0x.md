@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-sensor-distancia-vl53l0x/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 #include "Adafruit_VL53L0X.h"
 
 Adafruit_VL53L0X lox = Adafruit_VL53L0X();
@@ -38,3 +39,5 @@ void loop() {
     
   delay(100);
 }
+
+```

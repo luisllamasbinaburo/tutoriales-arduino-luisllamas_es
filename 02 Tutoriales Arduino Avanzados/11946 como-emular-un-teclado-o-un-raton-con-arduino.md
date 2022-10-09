@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/como-emular-un-teclado-o-un-raton-con-
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 // Inicia y finaliza el teclado virtual
 Keyboard.begin()
 Keyboard.end()
@@ -17,9 +18,10 @@ Keyboard.write()
 Keyboard.press()
 Keyboard.release()
 Keyboard.releaseAll()
+```
 
-
-#include <keyboard.h>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+#include <Keyboard.h>
 
 void setup() {
   Keyboard.begin();
@@ -30,9 +32,10 @@ void loop() {
   Keyboard.println("Hola mundo!");
   delay(1000);
 }
-</keyboard.h>
+```
 
-#include <keyboard.h>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+#include <Keyboard.h>
 
 void setup() {
   Keyboard.begin();
@@ -50,9 +53,10 @@ void loop() {
   
   delay(1000);
 }
-</keyboard.h>
+```
 
-#include <keyboard.h>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+#include <Keyboard.h>
 
 void setup() {
   Keyboard.begin();
@@ -73,8 +77,9 @@ void loop() {
   
   Keyboard.print("Hola mundo!");
 }
-</keyboard.h>
+```
 
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 // Iniciar y detener el ratón virtual
 Mouse.begin()
 Mouse.end()
@@ -87,8 +92,9 @@ Mouse.click()
 Mouse.press()
 Mouse.release()
 Mouse.isPressed()
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 #include "Mouse.h"
 
 void setup() {
@@ -100,3 +106,4 @@ void loop() {
 	Mouse.click();
 	delay(100);
 }
+```

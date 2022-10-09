@@ -4,8 +4,9 @@ Enlace entrada: https://www.luisllamas.es/arduino-acelerometro-mma7455/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <wire.h>
-#include <mma_7455.h>
+```cpp
+#include <Wire.h>
+#include <MMA_7455.h>
 
 MMA_7455 accel = MMA_7455(i2c_protocol);
 float xg, yg, zg;
@@ -32,4 +33,4 @@ void loop()
   Serial.println();
   delay(500);
 }
-</mma_7455.h></wire.h>
+```

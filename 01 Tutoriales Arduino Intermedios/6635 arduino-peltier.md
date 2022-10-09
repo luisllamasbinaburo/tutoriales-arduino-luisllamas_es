@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-peltier/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int pin = 9;
 
 void setup() {
@@ -16,8 +17,9 @@ void loop(){
   digitalWrite(pin, LOW);    // poner el Pin en LOW
   delay(10000);               // esperar 10 segundos
 }
+```
 
-
+```cpp
 const int pin = 9;
 
 const float thresholdLOW = 20.0;
@@ -50,3 +52,4 @@ void loop(){
 
    delay(5000);  // esperar 5 segundos entre medicioens
  }
+```

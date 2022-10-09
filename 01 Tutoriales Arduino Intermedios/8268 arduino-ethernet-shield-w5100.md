@@ -4,8 +4,9 @@ Enlace entrada: https://www.luisllamas.es/arduino-ethernet-shield-w5100/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <spi.h>
-#include <ethernet.h>
+```cpp
+#include <SPI.h>
+#include <Ethernet.h>
 
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
 IPAddress ip(192, 168, 1, 177);
@@ -74,10 +75,11 @@ void loop()
       while (true);
    }
 }
-</ethernet.h></spi.h>
+```
 
-#include <spi.h>
-#include <ethernet.h>
+```cpp
+#include <SPI.h>
+#include <Ethernet.h>
 
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
 IPAddress ip(192, 168, 1, 177);
@@ -125,9 +127,9 @@ void loop()
             client.print(i);
             client.print(" = ");
             client.print(digitalRead(i));
-            client.println(F("<br>"));
+            client.println(F("<br />"));
           }
-          client.println("<br><br>");
+          client.println("<br /><br />");
 
           client.println(F("<h2>Entradas analogicas</h2>"));
           for (int i = 0; i < 7; i++)
@@ -136,7 +138,7 @@ void loop()
             client.println(i);
             client.println(" = ");
             client.println(analogRead(i));
-            client.println(F("<br>"));
+            client.println(F("<br />"));
           }
 
           client.println(F("<a href='http://192.168.1.177'>Refrescar</a>"));
@@ -158,10 +160,11 @@ void loop()
     client.stop();
   }
 }
-</ethernet.h></spi.h>
+```
 
-#include <spi.h>
-#include <ethernet.h>
+```cpp
+#include <SPI.h>
+#include <Ethernet.h>
 
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
 IPAddress ip(192, 168, 1, 177);
@@ -239,17 +242,17 @@ void loop()
           
           client.print(F("Estado LED 1 = "));
           client.println(digitalRead(pinLed1) == LOW ? "OFF" : "ON");
-          client.println(F("<br>"));
-          client.println(F("<button onclick="location.href='./?data1=0'">ON</button>"));
-          client.println(F("<button onclick="location.href='./?data1=1'">OFF</button>"));
-          client.println(F("<br><br>"));
+          client.println(F("<br/>"));
+          client.println(F("<button onClick=location.href='./?data1=0'>ON</button>"));
+          client.println(F("<button onClick=location.href='./?data1=1'>OFF</button>"));
+          client.println(F("<br/><br/>"));
 
           client.print(F("Estado LED 2 = "));
           client.println(digitalRead(pinLed2) == LOW ? "OFF" : "ON");
-          client.println(F("<br>"));
-          client.println(F("<button onclick="location.href='./?data2=0'">ON</button>"));
-          client.println(F("<button onclick="location.href='./?data2=1'">OFF</button>"));
-          client.println(F("<br>"));
+          client.println(F("<br/>"));
+          client.println(F("<button onClick=location.href='./?data2=0'>ON</button>"));
+          client.println(F("<button onClick=location.href='./?data2=1'>OFF</button>"));
+          client.println(F("<br/>"));
 
           client.println(F("<a href='http://192.168.1.177'>Refrescar</a>"));
           client.println(F("</div>\n</body></html>"));
@@ -270,4 +273,4 @@ void loop()
     client.stop();
   }
 }
-</ethernet.h></spi.h>
+```

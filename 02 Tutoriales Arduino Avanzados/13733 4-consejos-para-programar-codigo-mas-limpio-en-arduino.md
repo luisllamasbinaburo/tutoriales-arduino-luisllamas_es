@@ -4,20 +4,23 @@ Enlace entrada: https://www.luisllamas.es/4-consejos-para-programar-codigo-mas-l
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 // ejemplo
 const int NUM_CHANNELS = 3;
 const int NUM_MEASURES = 10;
 const float SENSOR_GAIN = 3.5;
    // .... más constantes
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 // leo la temperatura del sensor
 int temperatura = analogRead(pin_sensor)
 
 // multiplico la temperatura por dos
 temperatura = temperatura * 2;
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 // nope
 int v = analogRead(ps);
 float r = v * f;
@@ -27,15 +30,17 @@ float t = r * fs;
 int voltaje = analogRead(PIN_SENSOR);
 float raw_temperature = voltaje * CONVERSION_C_MV;
 float temperature = raw_temperature * FACTOR_SENSOR;
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 // nope
 int DoMagic(int ps) { … }
 
 // sipe
 int GetTemperature(int pin_sensor) { … }
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 // nope
 int GetTemperatura(int ps, int i, int d) { … }
 
@@ -44,15 +49,17 @@ int GetTemperature(int pin_sensor, int interval, int delay) { … }
 
 // sipe
 int GetTemperature(Config configuration) { … }
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 //nope
 int temperatura = tension * 3 * 1.674;
 
 //sipe
 int temperatura = tension * NUM_CHANNELS * CONVERSION_C_MV
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 // ejemplo 1
 //nope
 bool result = Validate(GetTemperature(GetVoltaje(PIN_SENSOR)));
@@ -69,8 +76,9 @@ if(GetMeasure(pin_sensor)  { …}
 //sipe
 auto isValid = GetMeasure(PIN_SENSOR);
 if(isValid)  { … }
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 // nope
 if( Key == 0) MotorUp();
 
@@ -78,8 +86,9 @@ if( Key == 0) MotorUp();
 enum Control_Key { UP, DOWN, LEFT, RIGHT }
 
 if( Key == Control_Key.UP) MotorUp();
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 // nope
 int miFuncion()
 { 
@@ -112,8 +121,9 @@ int miFuncion()
    
    return result;
 }
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 // pseee aceptable
 void MoverMotor(int parametro)
 {
@@ -122,8 +132,9 @@ void MoverMotor(int parametro)
 	
 	//... mover motor
 }
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 // nope
 float raw;
 float a;
@@ -139,32 +150,38 @@ float CalculateTemperature(float raw, float a, float b)
 {
 	return a * raw + b
 }
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 int T = (REG >> 2 & b00001001 ) || ( TMCR_6 >> 3 & b00100101 );
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 //nope
 var miValor = miVector[i++] * 5.7;
 
 //asi si
 i++;
 auto miValor = miVector[i] * 5.7;
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 // nope, don't do that
 for(;; condition)
 {
 }
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 // un aplauso para esta falta de sentido común
 int T = (REG >> 2 & b00001001 ) || ( TMCR_6 >> 3 & b00100101 );
 delay(5000);
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 // nope
 #define pin_sensor 5;
 
 // sipe
 const int PIN_SENSOR = 5;
+```

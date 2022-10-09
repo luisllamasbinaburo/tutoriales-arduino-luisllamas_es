@@ -4,13 +4,14 @@ Enlace entrada: https://www.luisllamas.es/arduino-mando-wii-wiichuck/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 //GND - GND
 //VCC - VCC
 //SDA - Pin A4
 //SCL - Pin A5
 
-#include <wiichuck.h>
-#include <wire.h>
+#include <Wiichuck.h>
+#include <Wire.h>
 
 Wiichuck wii;
 
@@ -45,4 +46,4 @@ void loop() {
   
   delay(100);
 }
-</wire.h></wiichuck.h>
+```

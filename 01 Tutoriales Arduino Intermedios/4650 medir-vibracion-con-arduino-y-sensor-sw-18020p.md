@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/medir-vibracion-con-arduino-y-sensor-s
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int sensorPin = 2;
 const int ledPin = 13;
 
@@ -31,3 +32,4 @@ void loop() {
         digitalWrite(ledPin, LOW);
     }
 }
+```

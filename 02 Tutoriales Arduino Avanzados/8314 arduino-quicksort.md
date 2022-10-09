@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-quicksort/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 //1540us
 int values100[] = { 3, 53, 70, 56, 18, 85, 27, 14, 37, 94, 9, 55, 40, 60, 52, 61, 15, 65, 13, 8, 57, 97, 69, 4, 35, 82, 22, 73, 59, 68, 78, 24, 21, 36, 71, 80, 74, 39, 17, 12, 29, 76, 49, 51, 30, 90, 88, 2, 84, 50, 62, 28, 77, 43, 5, 16, 58, 26, 32, 34, 1, 75, 66, 95, 38, 89, 67, 87, 100, 54, 92, 81, 25, 83, 46, 33, 23, 45, 96, 99, 79, 48, 11, 31, 7, 6, 19, 91, 93, 44, 47, 98, 86, 41, 63, 20, 72, 10, 42, 64 };
 int values100Length = sizeof(values100) / sizeof(int);
@@ -58,7 +59,8 @@ void QuickSortAsc(int* arr, const int left, const int right)
    int pivot = arr[(left + right) / 2];
    while (i <= j)
    {
-      while (arr[i]<pivot) i++;="" while="" (arr[j]="">pivot) j--;
+      while (arr[i]<pivot) i++;
+      while (arr[j]>pivot) j--;
       if (i <= j)
       {
          tmp = arr[i];
@@ -69,5 +71,35 @@ void QuickSortAsc(int* arr, const int left, const int right)
       }
    };
 
-   if (left<j) quicksortasc(arr,="" left,="" j);="" if=""></j)><right) quicksortasc(arr,="" i,="" right);="" }="" void="" quicksortdesc(int*="" arr,="" const="" int="" left,="" const="" int="" right)="" {="" int="" i="left," j="right;" int="" tmp;="" int="" pivot="arr[(left" +="" right)="" 2];="" while="" (i="" <="j)" {="" while="" (arr[i]="">pivot) i++;
-      while (arr[j]<pivot) j--;="" if="" (i="" <="j)" {="" tmp="arr[i];" arr[i]="arr[j];" arr[j]="tmp;" i++;="" j--;="" }="" };="" if=""></pivot)><j) quicksortdesc(arr,="" left,="" j);="" if=""></j)><right) quicksortdesc(arr,="" i,="" right);="" }=""></right)></right)></pivot)>
+   if (left<j)
+      QuickSortAsc(arr, left, j);
+   if (i<right)
+      QuickSortAsc(arr, i, right);
+}
+
+void QuickSortDesc(int* arr, const int left, const int right)
+{
+   int i = left, j = right;
+   int tmp;
+
+   int pivot = arr[(left + right) / 2];
+   while (i <= j)
+   {
+      while (arr[i]>pivot) i++;
+      while (arr[j]<pivot) j--;
+      if (i <= j)
+      {
+         tmp = arr[i];
+         arr[i] = arr[j];
+         arr[j] = tmp;
+         i++;
+         j--;
+      }
+   };
+
+   if (left<j)
+      QuickSortDesc(arr, left, j);
+   if (i<right)
+      QuickSortDesc(arr, i, right);
+}
+```

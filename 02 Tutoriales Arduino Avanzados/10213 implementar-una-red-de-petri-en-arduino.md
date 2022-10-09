@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/implementar-una-red-de-petri-en-arduin
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 enum Input
 {
 	ForwardA = 0,
@@ -115,7 +116,7 @@ void setup()
 
 void loop()
 {
-	input = static_cast<input>(readInput());
+	input = static_cast<Input>(readInput());
 
 	Update();
 }
@@ -197,8 +198,9 @@ bool timerExpired()
 		return true;
 	return false;
 }
+```
 
-
+```cpp
 #include "PetriNetLib.h"
 
 enum Input
@@ -274,7 +276,7 @@ void setup()
 
 void loop()
 {
-	input = static_cast<input>(readInput());
+	input = static_cast<Input>(readInput());
 
 	petriNet.Update();
 }
@@ -330,3 +332,4 @@ bool timerExpired()
 		return true;
 	return false;
 }
+```

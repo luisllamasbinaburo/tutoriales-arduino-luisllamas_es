@@ -4,7 +4,8 @@ Enlace entrada: https://www.luisllamas.es/comunicacion-inalambrica-en-arduino-co
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <virtualwire.h>
+```cpp
+#include <VirtualWire.h>
 
 const int dataPin = 9;
 
@@ -26,9 +27,10 @@ void loop()
     }
     delay(200);
 }
-</virtualwire.h>
+```
 
-#include <virtualwire.h>
+```cpp
+#include <VirtualWire.h>
 
 const int dataPin = 9;
 const int ledPin = 13;
@@ -60,9 +62,10 @@ void loop()
         }            
     }
 }
-</virtualwire.h>
+```
 
-#include <virtualwire.h>
+```cpp
+#include <VirtualWire.h>
 
 const int dataPin = 9;
 const int ledPin = 13;
@@ -83,9 +86,10 @@ void loop()
     digitalWrite(ledPin, false);
     delay(200);
 }
-</virtualwire.h>
+```
 
-#include <virtualwire.h>
+```cpp
+#include <VirtualWire.h>
 
 const int dataPin = 9;
 const int ledPin = 13;
@@ -115,9 +119,10 @@ void loop()
         digitalWrite(ledPin, false);
     }
 }
-</virtualwire.h>
+```
 
-#include <virtualwire.h>
+```cpp
+#include <VirtualWire.h>
 
 const int dataPin = 9;
 	
@@ -148,9 +153,10 @@ void loop()
     
     delay(200);
 }
-</virtualwire.h>
+```
 
-#include <virtualwire.h>
+```cpp
+#include <VirtualWire.h>
 
 const int dataPin = 9;
 
@@ -193,4 +199,4 @@ void loop()
         }
     }
 }
-</virtualwire.h>
+```

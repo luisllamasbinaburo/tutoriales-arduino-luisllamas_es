@@ -4,20 +4,23 @@ Enlace entrada: https://www.luisllamas.es/estructuras-puerto-serie-arduino/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 void sendStructure(byte *structurePointer, int structureLength)
 {
     Serial.write(structurePointer, structureLength);
 }
 sendStructure((byte*)&myStruct, sizeof(myStruct));
+```
 
-
+```cpp
 void recieveStructure(byte *structurePointer, int structureLength)
 {
     Serial.readBytes(structurePointer, structureLength);
 }
 recieveStructure((byte*)&myStruct, sizeof(myStruct));
+```
 
-
+```cpp
 struct servoMoveMessage
 {
    int  servoNum;
@@ -46,8 +49,9 @@ void setup()
 void loop() 
 {
 }
+```
 
-
+```cpp
 struct servoMoveMessage
 {
    int  servoNum;
@@ -72,3 +76,4 @@ void setup()
 void loop() 
 {
 }
+```

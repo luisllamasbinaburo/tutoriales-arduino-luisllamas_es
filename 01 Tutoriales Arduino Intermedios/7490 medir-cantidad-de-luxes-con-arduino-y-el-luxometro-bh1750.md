@@ -4,8 +4,9 @@ Enlace entrada: https://www.luisllamas.es/medir-cantidad-de-luxes-con-arduino-y-
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <wire.h>
-#include <bh1750.h>
+```cpp
+#include <Wire.h>
+#include <BH1750.h>
 
 BH1750 luxometro;
 
@@ -30,10 +31,11 @@ void loop() {
 	Serial.println(" lx");
 	delay(500);
 }
-</bh1750.h></wire.h>
+```
 
-#include <wire.h>
-#include <bh1750.h>
+```cpp
+#include <Wire.h>
+#include <BH1750.h>
 
 BH1750 luxometro;;
 const byte luxMode = BH1750_CONTINUOUS_HIGH_RES_MODE;
@@ -71,4 +73,4 @@ void loop() {
 	}
 	delay(500);
 }
-</bh1750.h></wire.h>
+```

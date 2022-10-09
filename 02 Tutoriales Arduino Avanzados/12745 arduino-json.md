@@ -4,20 +4,24 @@ Enlace entrada: https://www.luisllamas.es/arduino-json/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```json
+
 {
   "id": 12,
   "description": "demoItem",
   "value": 50.4
 }
+```
 
-
+```json
 [
   "banana",
   12,
   3.1416
 ]
+```
 
-
+```json
 
 {
   "id": 12,
@@ -32,40 +36,49 @@ Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
     "city": "gondor"
   }
 }
+```
 
-
+```cpp
 StaticJsonDocument<200> doc;
 DynamicJsonDocument doc(1024);
+```
 
-
+```cpp
 doc["hola"] = "mundo";
+```
 
-
+```cpp
 doc.add("hola mundo");
+```
 
-
+```cpp
 JsonObject obj = doc.createNestedObject();
 obj["hello"] = "world";
+```
 
-
+```cpp
 JsonArray obj = doc.createNestedArray("nested");
 obj.add("hola mundo");
+```
 
-
+```cpp
 StaticJsonDocument<200> doc;
+```
 
-
+```cpp
 DynamicJsonDocument doc(1024);
+```
 
-
+```cpp
 serializeJson(const JsonDocument& doc, char* output, size_t outputSize);
 serializeJson(const JsonDocument& doc, char output[size]);
 serializeJson(const JsonDocument& doc, Print& output);
 serializeJson(const JsonDocument& doc, String& output);
 serializeJson(const JsonDocument& doc, std::string& output);
 serializeJson(const JsonDocument& doc, std::ostream& output);
+```
 
-
+```cpp
 DeserializationError deserializeJson(JsonDocument& doc, const char* input);
 DeserializationError deserializeJson(JsonDocument& doc, const char* input, size_t inputSize);
 DeserializationError deserializeJson(JsonDocument& doc, const __FlashStringHelper* input);
@@ -74,10 +87,11 @@ DeserializationError deserializeJson(JsonDocument& doc, const String& input);
 DeserializationError deserializeJson(JsonDocument& doc, const std::string& input);
 DeserializationError deserializeJson(JsonDocument& doc, Stream& input);
 DeserializationError deserializeJson(JsonDocument& doc, std::istream& input);
+```
 
-
-#include <arduinojson.hpp>
-#include <arduinojson.h>
+```cpp
+#include <ArduinoJson.hpp>
+#include <ArduinoJson.h>
 
 void SerializeObject()
 {
@@ -127,18 +141,20 @@ void setup()
 void loop()
 {
 }
-</arduinojson.h></arduinojson.hpp>
+```
 
+```json
 {
     "text": "myText",
     "id": 10,
     "status": true,
     "value": 3.14
 }
+```
 
-
-#include <arduinojson.hpp>
-#include <arduinojson.h>
+```cpp
+#include <ArduinoJson.hpp>
+#include <ArduinoJson.h>
 
 void SerializeArray()
 {
@@ -188,13 +204,15 @@ void setup()
 void loop()
 {
 }
-</arduinojson.h></arduinojson.hpp>
+```
 
+```json
 ["B", 45, 2.1728, true]
+```
 
-
-#include <arduinojson.hpp>
-#include <arduinojson.h>
+```cpp
+#include <ArduinoJson.hpp>
+#include <ArduinoJson.h>
 
 void SerializeComplex()
 {
@@ -276,8 +294,9 @@ void setup()
 void loop()
 {
 }
-</arduinojson.h></arduinojson.hpp>
+```
 
+```json
 {
     "text": "myText",
     "id": 10,
@@ -291,3 +310,4 @@ void loop()
     },
     "nestedArray": ["B", 45, 2.1728, true]
 }
+```

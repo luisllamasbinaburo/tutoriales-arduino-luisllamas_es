@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/detectar-gestos-con-arduino-y-sensor-a
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 #include "Adafruit_APDS9960.h"
 Adafruit_APDS9960 apds;
 
@@ -22,8 +23,9 @@ void loop() {
     if(gesture == APDS9960_LEFT) Serial.println("LEFT");
     if(gesture == APDS9960_RIGHT) Serial.println("RIGHT");
 }
+```
 
-
+```cpp
 #include "Adafruit_APDS9960.h"
 Adafruit_APDS9960 apds;
 
@@ -57,3 +59,4 @@ void blink(int count)
 	delay(100);     
   }
 }
+```

@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/sensor-de-humedad-del-suelo-capacitivo
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int sensorPin = A0;
 
 void setup()
@@ -16,8 +17,9 @@ void loop()
  Serial.print(humedad);
  delay(1000);
 }
+```
 
-
+```cpp
 const int sensorPin = A0;
 const int humedadAire = 550;
 const int humedadAgua = 250;
@@ -38,3 +40,4 @@ void loop()
    Serial.print(porcentajeHumedad);
    Serial.println("%"); 
 }
+```

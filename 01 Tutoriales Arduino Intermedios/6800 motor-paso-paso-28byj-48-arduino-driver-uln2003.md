@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/motor-paso-paso-28byj-48-arduino-drive
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 //definicion de pins
 const int motorPin1 = 8;    // 28BYJ48 In1
 const int motorPin2 = 9;    // 28BYJ48 In2
@@ -74,3 +75,4 @@ void setOutput(int step)
   digitalWrite(motorPin3, bitRead(stepsLookup[step], 2));
   digitalWrite(motorPin4, bitRead(stepsLookup[step], 3));
 }
+```

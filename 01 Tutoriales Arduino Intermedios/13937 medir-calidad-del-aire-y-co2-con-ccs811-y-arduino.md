@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/medir-calidad-del-aire-y-co2-con-ccs81
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 #include "Adafruit_CCS811.h"
 
 Adafruit_CCS811 ccs;
@@ -38,3 +39,4 @@ void loop() {
   }
   delay(500);
 }
+```

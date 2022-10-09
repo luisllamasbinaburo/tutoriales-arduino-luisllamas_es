@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/buffer-circular-arduino/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int circularBufferLength = 10;
 int circularBuffer[circularBufferLength];
 int circularBufferIndex = 0;
@@ -76,8 +77,9 @@ void setup()
 void loop()
 {
 }
+```
 
-
+```cpp
 const int circularBufferLength = 10;
 int circularBuffer[circularBufferLength];
 int* circularBufferAccessor = circularBuffer;
@@ -159,3 +161,4 @@ void setup()
 void loop()
 {
 }
+```

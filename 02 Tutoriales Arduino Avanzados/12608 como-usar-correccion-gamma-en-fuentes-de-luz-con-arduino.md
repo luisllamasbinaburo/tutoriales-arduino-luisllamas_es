@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/como-usar-correccion-gamma-en-fuentes-
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 const static uint8_t PROGMEM GammeTable8[] = {
 	0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,
 	0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  1,  1,  1,
@@ -26,15 +27,19 @@ uint8_t CorrectGamma_Table8(uint8_t value)
 {
 	result = pgm_read_byte(&GammeTable8[value]);
 }
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 analogWrite(pin, CorrectGamma_Table8(PWM));
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 uint8_t CorrectGamma8(uint8_t value)
 {
 	return (((45 * ((unsigned long)value + 1) + 3488) * ((unsigned long)value + 1) - 136379) * ((unsigned long)value + 1) + 1305350) / 3722130;
 }
+```
 
-
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 analogWrite(pin, CorrectGamma8(PWM));
+```

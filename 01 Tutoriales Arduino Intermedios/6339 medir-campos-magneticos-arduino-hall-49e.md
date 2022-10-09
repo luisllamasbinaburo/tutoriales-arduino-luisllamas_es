@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/medir-campos-magneticos-arduino-hall-4
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int pinHall = A0;
 
 void setup() {
@@ -35,3 +36,4 @@ void loop() {
   
   delay(2000);
 }
+```

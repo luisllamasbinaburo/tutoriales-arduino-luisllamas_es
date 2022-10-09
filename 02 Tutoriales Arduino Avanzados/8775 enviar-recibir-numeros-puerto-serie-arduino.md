@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/enviar-recibir-numeros-puerto-serie-ar
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 #define DEBUG(a) Serial.println(a);
 
 void setup()
@@ -24,8 +25,9 @@ void loop()
       }
    }
 }
+```
 
-
+```cpp
 #define DEBUG(a) Serial.println(a);
 
 void setup()
@@ -42,8 +44,9 @@ void loop()
       DEBUG((int)data);
    }
 }
+```
 
-
+```cpp
 #define DEBUG(a) Serial.println(a);
 
 void setup()
@@ -60,8 +63,9 @@ void loop()
       DEBUG(data);
    }
 }
+```
 
-
+```cpp
 #define DEBUG(a) Serial.println(a);
 
 void setup()
@@ -79,8 +83,9 @@ void loop()
       DEBUG(data);
    }
 }
+```
 
-
+```cpp
 #define DEBUG(a) Serial.println(a);
 
 void setup()
@@ -97,8 +102,9 @@ void loop()
       DEBUG(data);
    }
 }
+```
 
-
+```cpp
 #define DEBUG(a) Serial.println(a);
 
 void setup()
@@ -117,8 +123,9 @@ void loop()
       DEBUG(data);
    }
 }
+```
 
-
+```cpp
 #define DEBUG(a) Serial.println(a);
 
 void setup()
@@ -137,8 +144,9 @@ void loop()
       DEBUG(data);
    }
 }
+```
 
-
+```cpp
 #define DEBUG(a) Serial.println(a);
 
 void setup()
@@ -170,8 +178,9 @@ void loop()
       }
    }
 }
+```
 
-
+```cpp
 #define DEBUG(a) Serial.println(a);
 
 void setup()
@@ -222,3 +231,4 @@ void loop()
       }
    }
 }
+```

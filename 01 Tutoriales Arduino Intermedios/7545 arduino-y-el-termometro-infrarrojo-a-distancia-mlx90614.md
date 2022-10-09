@@ -4,8 +4,9 @@ Enlace entrada: https://www.luisllamas.es/arduino-y-el-termometro-infrarrojo-a-d
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <wire.h>
-#include <adafruit_mlx90614.h>
+```cpp
+#include <Wire.h>
+#include <Adafruit_MLX90614.h>
 
 Adafruit_MLX90614 mlx = Adafruit_MLX90614();
 
@@ -23,4 +24,4 @@ void loop() {
   Serial.println("ºC");
   delay(500);
 }
-</adafruit_mlx90614.h></wire.h>
+```

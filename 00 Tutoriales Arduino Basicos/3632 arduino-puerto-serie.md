@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-puerto-serie/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 int cont=0;
 
 void setup(){
@@ -20,8 +21,9 @@ void loop(){
   cont++;
   delay(1000);
 }
+```
 
-
+```csharp
 int option;
 int led = 13;
 
@@ -45,8 +47,9 @@ void loop(){
     }
   }
 }
+```
 
-
+```csharp
 int option;
 int led = 13;
 
@@ -65,4 +68,13 @@ void loop(){
     {
       //restamos el valor '0' para obtener el numeroenviado
       option -= '0';
-      for(int i=0;i<option;i++){ digitalwrite(led,="" high);="" delay(100);="" digitalwrite(led,="" low);="" delay(200);="" }="" }="" }="" }=""></option;i++){>
+      for(int i=0;i<option;i++){
+         digitalWrite(led, HIGH);
+         delay(100);
+         digitalWrite(led, LOW);
+         delay(200);
+      }
+    }
+  }
+}
+```

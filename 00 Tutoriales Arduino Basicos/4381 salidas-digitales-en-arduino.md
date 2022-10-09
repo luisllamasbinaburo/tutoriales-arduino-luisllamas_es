@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/salidas-digitales-en-arduino/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int pin = 2;
  
 void setup() {
@@ -17,8 +18,9 @@ void loop(){
   digitalWrite(pin, LOW);    // poner el Pin en LOW
   delay(1000);               // esperar un segundo
 }
+```
 
-
+```cpp
 const int pin = 2;
 int option;
 
@@ -43,3 +45,4 @@ void loop(){
     delay(200);
   }
 }
+```

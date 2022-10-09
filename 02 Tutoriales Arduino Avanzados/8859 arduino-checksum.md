@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-checksum/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 uint8_t XORChecksum8(const byte *data, size_t dataLength)
 {
   uint8_t value = 0;
@@ -13,8 +14,9 @@ uint8_t XORChecksum8(const byte *data, size_t dataLength)
   }
   return ~value;
 }
+```
 
-
+```cpp
 uint16_t XORChecksum16(const byte *data, size_t dataLength)
 {
   uint16_t value = 0;
@@ -25,8 +27,9 @@ uint16_t XORChecksum16(const byte *data, size_t dataLength)
   if(dataLength%2) value ^= data[dataLength - 1];
   return ~value;
 }
+```
 
-
+```cpp
 uint8_t TwoComplementChecksum8(const byte *data, size_t dataLength)
 {
   uint8_t value = 0;
@@ -36,8 +39,9 @@ uint8_t TwoComplementChecksum8(const byte *data, size_t dataLength)
   }
   return ~value;
 }
+```
 
-
+```cpp
 uint16_t TwoComplementChecksum16(const byte *data, size_t dataLength)
 {
   uint16_t value = 0;
@@ -48,8 +52,9 @@ uint16_t TwoComplementChecksum16(const byte *data, size_t dataLength)
   if(dataLength%2) value += data[dataLength - 1];
   return value;
 }
+```
 
-
+```cpp
 uint8_t OneComplementChecksum8(const byte *data, size_t dataLength)
 {
   uint16_t value = 0;
@@ -63,8 +68,9 @@ uint8_t OneComplementChecksum8(const byte *data, size_t dataLength)
 
   return (uint8_t)~sum;
 }
+```
 
-
+```cpp
 uint16_t OneComplementChecksum16(const byte *data, size_t dataLength)
 {
   uint32_t value = 0;
@@ -79,8 +85,9 @@ uint16_t OneComplementChecksum16(const byte *data, size_t dataLength)
 	
   return sum;
 }
+```
 
-
+```cpp
 uint16_t ChecksumFletcher16(byte *data, size_t count )
 {
    uint8_t sum1 = 0;
@@ -93,8 +100,9 @@ uint16_t ChecksumFletcher16(byte *data, size_t count )
    }
    return (sum2 << 8) | sum1;
 }
+```
 
-
+```cpp
 uint16_t ChecksumFletcher16(byte *data, size_t count )
 {
    uint16_t sum1 = 0;
@@ -112,8 +120,9 @@ uint16_t ChecksumFletcher16(byte *data, size_t count )
    }
    return (sum2 << 8) | sum1;
 }
+```
 
-
+```cpp
 //CRC-8 - based on the CRC8 formulas by Dallas/Maxim
 //code released under the therms of the GNU GPL 3.0 license
 byte CRC8(const byte *data, size_t dataLength)
@@ -135,3 +144,4 @@ byte CRC8(const byte *data, size_t dataLength)
   }
   return crc;
 }
+```

@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-cruce-por-cero-h11aa1/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int inputPin = 2;
  
 int value = 0;
@@ -25,8 +26,9 @@ void loop(){
   }
   delay(1000);
 }
+```
 
-
+```cpp
 // period of pulse accumulation and serial output, milliseconds
 const int inputPin = 2;
 const int MainPeriod = 100;
@@ -73,3 +75,4 @@ void loop()
     reportFrequency();
   }
 }
+```

@@ -4,9 +4,10 @@ Enlace entrada: https://www.luisllamas.es/arduino-i2c-json/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 #include "Wire.h"
-#include <arduinojson.hpp>
-#include <arduinojson.h>
+#include <ArduinoJson.hpp>
+#include <ArduinoJson.h>
 
 const byte I2C_SLAVE_ADDR = 0x20;
 
@@ -85,11 +86,12 @@ void DeserializeResponse()
     Serial.println(stat);
     Serial.println(value);
 }
-</arduinojson.h></arduinojson.hpp>
+```
 
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 #include "Wire.h"
-#include <arduinojson.hpp>
-#include <arduinojson.h>
+#include <ArduinoJson.hpp>
+#include <ArduinoJson.h>
  
 String json;
 StaticJsonDocument<300> doc;
@@ -158,4 +160,4 @@ void requestEvent()
 void loop() 
 {
 }
-</arduinojson.h></arduinojson.hpp>
+```

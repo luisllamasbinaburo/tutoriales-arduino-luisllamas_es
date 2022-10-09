@@ -4,7 +4,8 @@ Enlace entrada: https://www.luisllamas.es/arduino-ethernet-enc28j60/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <ethercard.h>
+```cpp
+#include <EtherCard.h>
 
 static byte mymac[] = { 0xDD, 0xDD, 0xDD, 0x00, 0x01, 0x05 };
 static byte myip[] = { 192, 168, 1, 177 };
@@ -54,9 +55,10 @@ void loop () {
     ether.browseUrl(PSTR("/2434bc64"), "", website, my_callback);  // En entorno IDE
   }
 }
-</ethercard.h>
+```
 
-#include <ethercard.h>
+```cpp
+#include <EtherCard.h>
 
 static byte mymac[] = { 0xDD, 0xDD, 0xDD, 0x00, 0x01, 0x05 };
 static byte myip[] = { 192, 168, 1, 177 };
@@ -86,31 +88,31 @@ static word mainPage()
 		"<div style='text-align:center;'>"
 		"<h1>Entradas digitales</h1>"
 		"Tiempo transcurrido : $L s"
-		"<br><br>D00: $D"
-		"<br><br>D01: $D"
-		"<br><br>D02: $D"
-		"<br><br>D03: $D"
-		"<br><br>D04: $D"
-		"<br><br>D05: $D"
-		"<br><br>D06: $D"
-		"<br><br>D07: $D"
-		"<br><br>D08: $D"
-		"<br><br>D09: $D"
-		"<br><br>D10: $D"
-		"<br><br>D11: $D"
-		"<br><br>D12: $D"
-		"<br><br>D13: $D"
+		"<br /><br />D00: $D"
+		"<br /><br />D01: $D"
+		"<br /><br />D02: $D"
+		"<br /><br />D03: $D"
+		"<br /><br />D04: $D"
+		"<br /><br />D05: $D"
+		"<br /><br />D06: $D"
+		"<br /><br />D07: $D"
+		"<br /><br />D08: $D"
+		"<br /><br />D09: $D"
+		"<br /><br />D10: $D"
+		"<br /><br />D11: $D"
+		"<br /><br />D12: $D"
+		"<br /><br />D13: $D"
 
 		"<h1>Entradas analogicas</h1>"
-		"<br><br>AN0: $D"
-		"<br><br>AN1: $D"
-		"<br><br>AN2: $D"
-		"<br><br>AN3: $D"
-		"<br><br>AN4: $D"
-		"<br><br>AN5: $D"
-		"<br><br>AN6: $D"
-		"<br><br>"
-		"</div></body></html>"), 
+		"<br /><br />AN0: $D"
+		"<br /><br />AN1: $D"
+		"<br /><br />AN2: $D"
+		"<br /><br />AN3: $D"
+		"<br /><br />AN4: $D"
+		"<br /><br />AN5: $D"
+		"<br /><br />AN6: $D"
+		"<br /><br />"
+		"</body></html>"), 
 		millis() / 1000, 
 		digitalRead(0),
 		digitalRead(1),
@@ -144,9 +146,10 @@ void loop()
 	{
 		ether.httpServerReply(mainPage());
 	}
-}</ethercard.h>
+}```
 
-#include <ethercard.h>
+```cpp
+#include <EtherCard.h>
 
 static byte mymac[] = { 0xDD, 0xDD, 0xDD, 0x00, 0x01, 0x05 };
 static byte myip[] = { 192, 168, 1, 177 };
@@ -185,13 +188,13 @@ static word mainPage()
 		"<body>"
 		"<div style='text-align:center;'>"
 		"<h1>Salidas digitales</h1>"
-		"<br><br>Estado LED 1 = $S<br>"
+		"<br /><br />Estado LED 1 = $S<br />"
 		"<a href='./?data1=0'><input type='button' value='OFF'></a>"
 		"<a href='./?data1=1'><input type='button' value='ON'></a>"
-		"<br><br>Estado LED 2 = $S<br>"
+		"<br /><br />Estado LED 2 = $S<br />"
 		"<a href='./?data2=0'><input type='button' value='OFF'></a>"
 		"<a href='./?data2=1'><input type='button' value='ON'></a>"
-		"<br></div>\n</body></html>"), statusLed1, statusLed2);
+		"<br /></div>\n</body></html>"), statusLed1, statusLed2);
 
 	return bfill.position();
 }
@@ -231,4 +234,4 @@ void loop()
 		ether.httpServerReply(mainPage());
 	}
 }
-</ethercard.h>
+```

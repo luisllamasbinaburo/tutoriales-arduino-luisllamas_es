@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/interruptor-touchless-con-arduino-y-se
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int sensorPin = 9;
 
 void setup()
@@ -24,3 +25,4 @@ void loop()
    }
    delay(1000);
 }
+```

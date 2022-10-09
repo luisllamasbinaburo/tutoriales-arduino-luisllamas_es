@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/puerto-serie-avanzado-arduino/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const char STX = '\x002';
 const char ETX = '\x003';
 const char ACK = '\x006';
@@ -102,8 +103,9 @@ void setup()
 void loop() 
 {
 }
+```
 
-
+```cpp
 const char STX = '\x002';
 const char ETX = '\x003';
 const char ACK = '\x006';
@@ -199,3 +201,4 @@ void loop()
 {
   ProcessSerialData((byte*)&message, sizeof(message), TimeOut, okAction, errorAction);
 }
+```

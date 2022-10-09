@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/comunicar-arduino-con-c/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 using System;
 using System.Windows.Forms;
 
@@ -47,8 +48,9 @@ namespace BasicSerialPort
     }
 }
 
+```
 
-
+```cpp
 const int pinLED = 13;
 
 void setup()
@@ -71,8 +73,9 @@ void loop() {
 		}
 	}
 }
+```
 
-
+```csharp
 using System;
 using System.Windows.Forms;
 
@@ -117,8 +120,9 @@ namespace BasicSerialPort
         }
     }
 }
+```
 
-
+```cpp
 const int pinLED = 13;
 
 void setup() 
@@ -135,4 +139,14 @@ void loop()
 		if (option >= '1' && option <= '9')
 		{
 			option -= '0';
-			for (int i = 0;i<option;i++) {="" digitalwrite(pinled,="" high);="" delay(100);="" digitalwrite(pinled,="" low);="" delay(200);="" }="" }="" }="" }=""></option;i++)>
+			for (int i = 0;i<option;i++) 
+			{
+				digitalWrite(pinLED, HIGH);
+				delay(100);
+				digitalWrite(pinLED, LOW);
+				delay(200);
+			}
+		}
+	}
+}
+```

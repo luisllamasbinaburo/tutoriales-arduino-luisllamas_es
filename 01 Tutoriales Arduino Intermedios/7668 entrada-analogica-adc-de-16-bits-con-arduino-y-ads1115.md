@@ -4,8 +4,9 @@ Enlace entrada: https://www.luisllamas.es/entrada-analogica-adc-de-16-bits-con-a
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <wire.h>
-#include <adafruit_ads1015.h>
+```cpp
+#include <Wire.h>
+#include <Adafruit_ADS1015.h>
 
 Adafruit_ADS1115 ads;
 const float multiplier = 0.1875F;
@@ -41,10 +42,11 @@ void loop(void)
   
   delay(1000);
 }
-</adafruit_ads1015.h></wire.h>
+```
 
-#include <wire.h>
-#include <adafruit_ads1015.h>
+```cpp
+#include <Wire.h>
+#include <Adafruit_ADS1015.h>
 
 Adafruit_ADS1115 ads;
 const float multiplier = 0.1875F;
@@ -68,10 +70,11 @@ void loop(void)
 
   delay(1000);
 }
-</adafruit_ads1015.h></wire.h>
+```
 
-#include <wire.h>
-#include <adafruit_ads1015.h>
+```cpp
+#include <Wire.h>
+#include <Adafruit_ADS1015.h>
 
 Adafruit_ADS1115 ads;
 
@@ -96,4 +99,4 @@ void loop(void)
   
   delay(100);
 }
-</adafruit_ads1015.h></wire.h>
+```

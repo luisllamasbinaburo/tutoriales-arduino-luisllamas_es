@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-motor-corriente-continua-l298n
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 const int pinENA = 6;
 const int pinIN1 = 7;
 const int pinIN2 = 8;
@@ -24,8 +25,9 @@ void loop()
 	analogWrite(pinENA, speed);
 	delay(1000);
 }
+```
 
-
+```csharp
 const int pinENA = 6;
 const int pinIN1 = 7;
 const int pinIN2 = 8;
@@ -87,3 +89,4 @@ void fullStop(const int pinMotor[3])
 
 	analogWrite(pinMotor[0], 0);
 }
+```

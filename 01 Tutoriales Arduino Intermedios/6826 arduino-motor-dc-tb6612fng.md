@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-motor-dc-tb6612fng/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 const int pinPWMA = 6;
 const int pinAIN2 = 7;
 const int pinAIN1 = 8;
@@ -127,3 +128,4 @@ void disableMotors()
 {
 	digitalWrite(pinSTBY, LOW);
 }
+```

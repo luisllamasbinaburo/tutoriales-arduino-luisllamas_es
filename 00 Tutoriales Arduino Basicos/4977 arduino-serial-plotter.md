@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-serial-plotter/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 void setup() {
   Serial.begin(9600);
 }
@@ -17,3 +18,4 @@ void loop() {
 
   delay(100);
 }
+```

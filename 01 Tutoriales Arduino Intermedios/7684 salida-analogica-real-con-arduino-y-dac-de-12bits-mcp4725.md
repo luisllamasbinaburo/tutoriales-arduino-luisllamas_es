@@ -4,8 +4,9 @@ Enlace entrada: https://www.luisllamas.es/salida-analogica-real-con-arduino-y-da
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <wire.h>
-#include <adafruit_mcp4725.h>
+```cpp
+#include <Wire.h>
+#include <Adafruit_MCP4725.h>
 
 Adafruit_MCP4725 dac;
 
@@ -25,4 +26,4 @@ void loop(void) {
       dac.setVoltage(counter, false);
     }
 }
-</adafruit_mcp4725.h></wire.h>
+```

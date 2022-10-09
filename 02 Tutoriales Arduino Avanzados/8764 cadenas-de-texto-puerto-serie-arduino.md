@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/cadenas-de-texto-puerto-serie-arduino/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 #define DEBUG(a) Serial.println(a);
 
 void setup()
@@ -23,8 +24,9 @@ void loop()
       }
    }
 }
+```
 
-
+```cpp
 #define DEBUG(a) Serial.println(a);
 
 void setup()
@@ -41,8 +43,9 @@ void loop()
       DEBUG(data);
    }
 }
+```
 
-
+```cpp
 #define DEBUG(a, b) for (int index = 0; index < b; index++) Serial.print(a[index]); Serial.println();
 
 void setup()
@@ -60,8 +63,9 @@ void loop()
       DEBUG(data, count)
    }
 }
+```
 
-
+```cpp
 #define DEBUG(a) Serial.println(a);
 
 String data = "";
@@ -87,8 +91,9 @@ void loop()
 		}
 	}
 }
+```
 
-
+```cpp
 #define DEBUG(a) Serial.println(a);
 
 char data[20];
@@ -116,3 +121,4 @@ void loop()
 		}
 	}
 }
+```

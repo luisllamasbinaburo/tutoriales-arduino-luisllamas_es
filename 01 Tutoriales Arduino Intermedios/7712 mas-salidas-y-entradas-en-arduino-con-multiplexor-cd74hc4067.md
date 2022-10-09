@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/mas-salidas-y-entradas-en-arduino-con-
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int muxSIG = A0;
 const int muxS0 = 8;
 const int muxS1 = 9;
@@ -38,8 +39,9 @@ void loop()
 		delay(200);
 	}
 }
+```
 
-
+```cpp
 const int muxSIG = A0;
 const int muxS0 = 8;
 const int muxS1 = 9;
@@ -76,3 +78,5 @@ void loop()
 	Serial.println();
 	delay(1000);
 }
+
+```

@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/motores-paso-a-paso-en-silencio-con-ar
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 const int dirPin = 8;
 const int stepPin = 9;
 
@@ -41,8 +42,9 @@ void loop() {
 	}
 	delay(1000);
 }
+```
 
-
+```csharp
 const int enPin = 16;
 const int dirPin = 19;
 const int stepPin = 18;
@@ -51,7 +53,7 @@ const int csPin = 17;
 const int steps = 200;
 int stepDelay;
 
-#include <tmc2130stepper.h>
+#include <TMC2130Stepper.h>
 TMC2130Stepper TMC2130 = TMC2130Stepper(enPin, dirPin, stepPin, csPin);
 
 void setup() {
@@ -89,14 +91,15 @@ void loop() {
 	}
 	delay(1000);
 }
-</tmc2130stepper.h>
+```
 
+```csharp
 const int stepPin = 9;
 
 const int steps = 200;
 int stepDelay;
 
-#include <tmc2208stepper.h>
+#include <TMC2208Stepper.h>
 TMC2208Stepper driver = TMC2208Stepper(&Serial);
 
 void setup() {
@@ -136,4 +139,4 @@ void loop() {
 	}
 	delay(1000);
 }
-</tmc2208stepper.h>
+```

@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/como-usar-extensor-i2c-tca9548a-y-ardu
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 #include "Wire.h"
 
 void scanI2CBus(byte from_addr, byte to_addr, void(*callback)(byte address, byte result) ) 
@@ -40,8 +41,9 @@ void loop()
 {
     delay(1000);
 }
+```
 
-
+```csharp
 /**
  * TCA9548 I2CScanner.ino -- I2C bus scanner for Arduino
  *
@@ -90,3 +92,4 @@ void setup()
 void loop() 
 {
 }
+```

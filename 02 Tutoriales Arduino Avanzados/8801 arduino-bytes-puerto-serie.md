@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-bytes-puerto-serie/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const byte data[] = {0, 50, 100, 150, 200, 250};
 const size_t dataLength = sizeof(data) / sizeof(data[0]);
 
@@ -16,8 +17,9 @@ void setup()
 void loop() 
 {
 }
+```
 
-
+```cpp
 const int NUM_BYTES = 3;
 byte data[NUM_BYTES];
 
@@ -47,8 +49,9 @@ void loop()
 		OkAction();
 	}
 }
+```
 
-
+```cpp
 void sendBytes(uint8_t value)
 {
   Serial.write(value);
@@ -67,8 +70,9 @@ void sendBytes(uint32_t value)
   temp = value >> 16;
   sendBytes(temp);
 }
+```
 
-
+```cpp
 uint8_t byteToInt(byte byte1)
 {
 	return (uint8_t)byte1;
@@ -86,3 +90,4 @@ uint32_t byteToLong(byte byte1, byte byte2, byte byte3, byte byte4)
            | (uint32_t)byte3 << 8
            | (uint32_t)byte4;
 }
+```

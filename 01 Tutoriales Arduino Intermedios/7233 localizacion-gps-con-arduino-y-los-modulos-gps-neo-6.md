@@ -4,7 +4,8 @@ Enlace entrada: https://www.luisllamas.es/localizacion-gps-con-arduino-y-los-mod
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <softwareserial.h>
+```cpp
+#include <SoftwareSerial.h>
 
 const int RX = 4;
 const int TX = 3;
@@ -26,10 +27,11 @@ void loop()
 		Serial.print(data);
 	}
 }
-</softwareserial.h>
+```
 
-#include <softwareserial.h>
-#include <tinygps.h>
+```cpp
+#include <SoftwareSerial.h>
+#include <TinyGPS.h>
 
 TinyGPS gps;
 SoftwareSerial softSerial(4, 3);
@@ -80,4 +82,4 @@ void loop()
 	Serial.print(" CSUM ERR=");
 	Serial.println(failed);
 }
-</tinygps.h></softwareserial.h>
+```

@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-paso-banda/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 float EMA_ALPHA_LOW = 0.025;
 float EMA_ALPHA_HIGH = 0.1;
 int EMA_LP_LOW = 0;
@@ -59,3 +60,4 @@ int EMABandStopFilter(int value)
 	EMA_BS = value - EMA_BP;
 	return EMA_BS;
 }
+```

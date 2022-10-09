@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/resolver-robots-articulados-con-arduin
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 float L1, L2, D;
 float AbsoluteAngle1, AbsoluteAngle2;
 float RelativeAngle12;
@@ -115,8 +116,9 @@ void loop()
 	// Do nothing
 	delay(10000);
 }
+```
 
-
+```cpp
 float L1, L2, L3, D;
 float AbsoluteAngle1, AbsoluteAngle2, AbsoluteAngle3;
 float RelativeAngle12, RelativeAngle23;
@@ -238,8 +240,9 @@ void loop()
 	// Do nothing
 	delay(10000);
 }
+```
 
-
+```cpp
 float L1, L2, D;
 float AbsoluteAngle0, AbsoluteAngle1, AbsoluteAngle2;
 float RelativeAngle12;
@@ -367,8 +370,9 @@ void loop()
 	// Do nothing
 	delay(10000);
 }
+```
 
-
+```cpp
 float L1, L2, L3, D;
 float AbsoluteAngle0, AbsoluteAngle1, AbsoluteAngle2, AbsoluteAngle3;
 float RelativeAngle12, RelativeAngle23;
@@ -506,3 +510,4 @@ void loop()
 	// Do nothing
 	delay(10000);
 }
+```

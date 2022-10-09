@@ -4,7 +4,8 @@ Enlace entrada: https://www.luisllamas.es/pulsimetro-y-oximetro-con-arduino-y-ma
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <wire.h>
+```cpp
+#include <Wire.h>
 #include "MAX30105.h"
 #include "spo2_algorithm.h"
 
@@ -127,4 +128,4 @@ void loop()
     maxim_heart_rate_and_oxygen_saturation(irBuffer, bufferLength, redBuffer, &spo2, &validSPO2, &heartRate, &validHeartRate);
   }
 }
-</wire.h>
+```

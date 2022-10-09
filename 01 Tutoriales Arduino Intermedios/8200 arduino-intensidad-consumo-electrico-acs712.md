@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-intensidad-consumo-electrico-a
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 // Sensibilidad del sensor en V/A
 float SENSIBILITY = 0.185;   // Modelo 5A
 //float SENSIBILITY = 0.100; // Modelo 20A
@@ -46,3 +47,5 @@ float getCorriente(int samplesNumber)
 	}
 	return(corrienteSum / samplesNumber);
 }
+
+```

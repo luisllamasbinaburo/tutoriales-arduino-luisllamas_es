@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-rs485-max485/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 void setup() 
 { 
   Serial.begin(9600);
@@ -15,8 +16,9 @@ void loop()
   Serial.write(data);
   delay(250);                           
 } 
+```
 
-
+```cpp
 void setup() 
 { 
   Serial.begin(9600);  
@@ -29,8 +31,9 @@ void loop()
     byte data = Serial.read(); 
   }
 } 
+```
 
-
+```cpp
 const int ledPin =  13;  // Led integrado
 const int ReDePin =  2;  // HIGH = Driver / LOW = Receptor
 const char HEADER = 'H';
@@ -63,8 +66,9 @@ void loop()
 		// Aqui hariamos lo que queramos con data
 	}
 } 
+```
 
-
+```cpp
 const int ledPin =  13;  // Led integrado
 const int ReDePin =  2;  // HIGH = Driver / LOW = Receptor
 const char HEADER = 'H';
@@ -99,4 +103,5 @@ void loop()
 		}
 	}
 	delay(10);
-}
+} 
+```

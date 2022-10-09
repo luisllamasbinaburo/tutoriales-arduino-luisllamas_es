@@ -4,13 +4,16 @@ Enlace entrada: https://www.luisllamas.es/reproducir-sonidos-arduino-buzzer-pasi
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 tone(pin, frecuencia); //activa un tono de frecuencia determinada en un pin dado
 noTone(pin);           //detiene el tono en el pin
+```
 
-
+```csharp
 tone(pin, frequencia, duracion);  //activa un tono de frecuencia y duracion determinados en un pin dado
+```
 
-
+```csharp
 const int pinBuzzer = 9;
 
 void setup() 
@@ -31,8 +34,9 @@ void loop()
   tone(pinBuzzer, 523, 300);
   delay(500);
 }
+```
 
-
+```csharp
 const int pinBuzzer = 9;
 
 const int tonos[] = {261, 277, 294, 311, 330, 349, 370, 392, 415, 440, 466, 494};
@@ -51,3 +55,4 @@ void loop()
   }
   noTone(pinBuzzer);
 }
+```

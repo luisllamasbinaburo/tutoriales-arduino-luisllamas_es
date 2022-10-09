@@ -4,14 +4,17 @@ Enlace entrada: https://www.luisllamas.es/arduino-sensor-corriente-sct-013/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#define ADS1115_CONVERSIONDELAY         (8)
+```cpp
+    #define ADS1115_CONVERSIONDELAY         (8)
+```
 
-
+```cpp
     #define ADS1115_CONVERSIONDELAY         (1)
+```
 
-
-#include <wire.h>
-#include <adafruit_ads1015.h>
+```cpp
+#include <Wire.h>
+#include <Adafruit_ADS1015.h>
  
 Adafruit_ADS1115 ads;
   
@@ -65,8 +68,9 @@ float getCorriente()
  corriente = sqrt(sum / counter);
  return(corriente);
 }
-</adafruit_ads1015.h></wire.h>
+```
 
+```cpp
 float getCorriente()
 {
  long tiempo = millis();
@@ -86,8 +90,9 @@ float getCorriente()
   float currentRMS = voltageRMS * FACTOR;
   return(currentRMS);
 }
+```
 
-
+```cpp
 const float FACTOR = 30; //30A/1V
 
 const float VMIN = 1.08;
@@ -147,3 +152,4 @@ float fmap(float x, float in_min, float in_max, float out_min, float out_max)
 {
  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
+```

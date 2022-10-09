@@ -4,8 +4,9 @@ Enlace entrada: https://www.luisllamas.es/arduino-mp3-dfplayer-mini/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <softwareserial.h>
-#include <dfplayer_mini_mp3.h>
+```cpp
+#include <SoftwareSerial.h>
+#include <DFPlayer_Mini_Mp3.h>
 
 SoftwareSerial DFPlayerSerial(10, 11); // RX, TX
 
@@ -42,4 +43,4 @@ void loop()
 	mp3_play(4);
 	delay(6000);
 }
-</dfplayer_mini_mp3.h></softwareserial.h>
+```

@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/detectar-sonido-con-arduino-y-microfon
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int pinLED = 13;
 const int pinMicrophone = 9;
 
@@ -27,8 +28,9 @@ void loop ()
     delay(10);
   }
 }
+```
 
-
+```cpp
 const int pinLED = 13; 
 const int pinMicrophone = 9;
 bool state;
@@ -50,3 +52,4 @@ void loop()
   }
   delay(10);
 }
+```

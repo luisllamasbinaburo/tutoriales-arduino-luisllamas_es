@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-teclado-matricial/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const unsigned long period = 50;
 unsigned long prevMillis = 0;
 
@@ -82,9 +83,10 @@ void loop()
   }
 }
 
+```
 
-
-#include <keypad.h>
+```cpp
+#include <Keypad.h>
  
 const byte rowsCount = 4;
 const byte columsCount = 4;
@@ -112,4 +114,4 @@ void loop() {
       Serial.println(key);
    }
 }
-</keypad.h>
+```

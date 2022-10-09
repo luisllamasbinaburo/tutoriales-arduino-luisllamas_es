@@ -4,7 +4,8 @@ Enlace entrada: https://www.luisllamas.es/reloj-y-calendario-en-arduino-con-los-
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <wire.h>
+```cpp
+#include <Wire.h>
 #include "RTClib.h"
 
 // RTC_DS1307 rtc;
@@ -57,9 +58,10 @@ void loop() {
 
 	delay(3000);
 }
-</wire.h>
+```
 
-#include <wire.h>
+```cpp
+#include <Wire.h>
 #include "RTClib.h"
 
 const int outputPin = LED_BUILTIN;
@@ -117,11 +119,12 @@ void loop() {
 	}
 
 	delay(3000);
-}</wire.h>
+}```
 
-#include <spi.h>
-#include <sd.h>
-#include <wire.h>
+```cpp
+#include <SPI.h>
+#include <SD.h>
+#include <Wire.h>
 #include "RTClib.h"
 
 File logFile;
@@ -184,4 +187,4 @@ void loop()
 	}
 	delay(10000);
 }
-</wire.h></sd.h></spi.h>
+```

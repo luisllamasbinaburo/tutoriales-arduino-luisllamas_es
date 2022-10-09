@@ -4,11 +4,12 @@ Enlace entrada: https://www.luisllamas.es/usar-arduino-y-el-imu-9-ejes-l3gd20-ls
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <wire.h>
-#include <adafruit_sensor.h>
-#include <adafruit_lsm303_u.h>
-#include <adafruit_9dof.h>
-#include <adafruit_l3gd20_u.h>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+#include <Wire.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_LSM303_U.h>
+#include <Adafruit_9DOF.h>
+#include <Adafruit_L3GD20_U.h>
 
 Adafruit_9DOF                 dof   = Adafruit_9DOF();
 Adafruit_LSM303_Accel_Unified accel = Adafruit_LSM303_Accel_Unified(30301);
@@ -62,4 +63,4 @@ void loop(void)
   
   delay(100);
 }
-</adafruit_l3gd20_u.h></adafruit_9dof.h></adafruit_lsm303_u.h></adafruit_sensor.h></wire.h>
+```

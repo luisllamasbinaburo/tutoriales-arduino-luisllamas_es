@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/programar-arduino-con-atom-y-platformi
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 void setup() {
   // initialize digital pin 13 as an output.
   pinMode(13, OUTPUT);
@@ -15,3 +16,4 @@ void loop() {
   digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
   delay(1000);              // wait for a second
 }
+```

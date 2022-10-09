@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/medir-color-arduino-colorimetro-tcs320
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 //VCC——5V	
 //GND——GND
 //S0——D3	
@@ -70,3 +71,4 @@ void getColor()
 	digitalWrite(s2, HIGH);
 	countGreen = pulseIn(out, digitalRead(out) == HIGH ? LOW : HIGH);
 }
+```

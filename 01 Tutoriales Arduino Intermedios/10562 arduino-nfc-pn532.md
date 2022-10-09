@@ -4,9 +4,10 @@ Enlace entrada: https://www.luisllamas.es/arduino-nfc-pn532/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <wire.h>
-#include <spi.h>
-#include <adafruit_pn532.h>
+```cpp
+#include <Wire.h>
+#include <SPI.h>
+#include <Adafruit_PN532.h>
 
 #define PN532_IRQ   (2)
 #define PN532_RESET (3)  // Not connected by default on the NFC Shield
@@ -65,11 +66,12 @@ void loop(void) {
     Serial.println("Tarjeta no encontrada");
   }
 }
-</adafruit_pn532.h></spi.h></wire.h>
+```
 
-#include <wire.h>
-#include <spi.h>
-#include <adafruit_pn532.h>
+```cpp
+#include <Wire.h>
+#include <SPI.h>
+#include <Adafruit_PN532.h>
 
 #define PN532_IRQ   (2)
 #define PN532_RESET (3)
@@ -126,11 +128,12 @@ void loop(void)
       }
     }
 }
-</adafruit_pn532.h></spi.h></wire.h>
+```
 
-#include <wire.h>
-#include <spi.h>
-#include <adafruit_pn532.h>
+```cpp
+#include <Wire.h>
+#include <SPI.h>
+#include <Adafruit_PN532.h>
 
 #define PN532_IRQ   (2)
 #define PN532_RESET (3)
@@ -186,11 +189,12 @@ void loop(void)
       }
     }
 }
-</adafruit_pn532.h></spi.h></wire.h>
+```
 
-#include <wire.h>
-#include <spi.h>
-#include <adafruit_pn532.h>
+```cpp
+#include <Wire.h>
+#include <SPI.h>
+#include <Adafruit_PN532.h>
 
 #define PN532_IRQ   (2)
 #define PN532_RESET (3)
@@ -243,11 +247,12 @@ void loop(void)
     }
   }
 }
-</adafruit_pn532.h></spi.h></wire.h>
+```
 
-#include <wire.h>
-#include <spi.h>
-#include <adafruit_pn532.h>
+```cpp
+#include <Wire.h>
+#include <SPI.h>
+#include <Adafruit_PN532.h>
 
 #define PN532_IRQ   (2)
 #define PN532_RESET (3)
@@ -316,4 +321,4 @@ void loop(void) {
 }
 
 
-</adafruit_pn532.h></spi.h></wire.h>
+```

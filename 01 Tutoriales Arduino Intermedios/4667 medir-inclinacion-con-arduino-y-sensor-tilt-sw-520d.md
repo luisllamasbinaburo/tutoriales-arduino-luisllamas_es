@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/medir-inclinacion-con-arduino-y-sensor
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int SensorPin = 2;
 const int LEDPin = 13;
 
@@ -20,3 +21,4 @@ void loop() {
         digitalWrite(LEDPin, LOW);
     }
 }
+```

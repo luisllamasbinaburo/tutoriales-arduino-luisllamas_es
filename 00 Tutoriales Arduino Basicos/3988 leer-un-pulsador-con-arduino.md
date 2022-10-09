@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/leer-un-pulsador-con-arduino/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int inputPin = 2;
 
 int value = 0;
@@ -25,3 +26,4 @@ void loop(){
   }
   delay(1000);
 }
+```

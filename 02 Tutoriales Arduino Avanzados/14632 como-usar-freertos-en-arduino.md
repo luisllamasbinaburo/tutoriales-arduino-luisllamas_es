@@ -4,7 +4,8 @@ Enlace entrada: https://www.luisllamas.es/como-usar-freertos-en-arduino/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <arduino_freertos.h>
+```csharp
+ #include <Arduino_FreeRTOS.h>
 
 void TaskBlink(void *pvParameters)
 {
@@ -39,4 +40,4 @@ void loop()
 	Serial.println(millis());
 	delay(1000);
 }
-</arduino_freertos.h>
+```

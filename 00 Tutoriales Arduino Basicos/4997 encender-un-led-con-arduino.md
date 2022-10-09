@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/encender-un-led-con-arduino/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int ledPIN = 9;
  
 void setup() {
@@ -17,8 +18,9 @@ void loop(){
   digitalWrite(ledPIN , LOW);    // poner el Pin en LOW
   delay(1000);                   // esperar un segundo
 }
+```
 
-
+```csharp
 const int ledPIN = 9;
 
 int option;
@@ -38,8 +40,18 @@ void loop(){
     {
       //restamos el valor '0' para obtener el numero enviado
       option -= '0';
-      for(int i=0;i<option;i++){ digitalwrite(ledpin="" ,="" high);="" delay(100);="" digitalwrite(ledpin="" ,="" low);="" delay(200);="" }="" }="" }="" }=""></option;i++){>
+      for(int i=0;i<option;i++){
+         digitalWrite(ledPIN , HIGH);
+         delay(100);
+         digitalWrite(ledPIN , LOW);
+         delay(200);
+      }
+    }
+  }
+}
+```
 
+```cpp
 const int ledPIN = 9;
 
 byte outputValue = 0;  
@@ -62,4 +74,5 @@ void loop()
          analogWrite(ledPIN , outputValue);
       }
    }
-}
+}  
+```

@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/lectura-de-una-resistencia-variable-co
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int sensorPin = A0;
 const int Rc = 1500;  // valor de la resistencia de calibración
 
@@ -21,3 +22,4 @@ void loop() {
 
 	delay(1000);
 }
+```

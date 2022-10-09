@@ -4,7 +4,8 @@ Enlace entrada: https://www.luisllamas.es/comunicacion-rf-385-433-y-815mhz-con-a
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <elechouse_cc1101_src_drv.h>
+```cpp
+#include <ELECHOUSE_CC1101_SRC_DRV.h>
 
 void setup(){
 
@@ -50,9 +51,10 @@ void loop(){
     }
     }
 }
-</elechouse_cc1101_src_drv.h>
+```
 
-#include <elechouse_cc1101_src_drv.h>
+```cpp
+#include <ELECHOUSE_CC1101_SRC_DRV.h>
 
 void setup(){
 
@@ -98,10 +100,11 @@ void loop(){
     }
     }
 }
-</elechouse_cc1101_src_drv.h>
+```
 
-#include <elechouse_cc1101_src_drv.h>
-#include <rcswitch.h>
+```cpp
+#include <ELECHOUSE_CC1101_SRC_DRV.h>
+#include <RCSwitch.h>
 
 int pin; // int for Receive pin.
 
@@ -138,10 +141,11 @@ void loop() {
     mySwitch.resetAvailable();
   }
 }
-</rcswitch.h></elechouse_cc1101_src_drv.h>
+```
 
-#include <elechouse_cc1101_src_drv.h>
-#include <newremotereceiver.h>
+```cpp
+#include <ELECHOUSE_CC1101_SRC_DRV.h>
+#include <NewRemoteReceiver.h>
 
 int pin;
 
@@ -185,4 +189,4 @@ void onReceived(unsigned int period, unsigned long address, unsigned long groupB
   Serial.println(switchType);
 
 }
-</newremotereceiver.h></elechouse_cc1101_src_drv.h>
+```

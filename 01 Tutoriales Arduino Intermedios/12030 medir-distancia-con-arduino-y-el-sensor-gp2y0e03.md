@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/medir-distancia-con-arduino-y-el-senso
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int sensorPin = A0;
 void setup()
 {
@@ -18,9 +19,10 @@ void loop()
 
 	delay(100);
 }
+```
 
-
-#include <wire.h>
+```cpp
+#include <Wire.h>
 
  // 7 highest bits
 #define ADDRESS         (0x80 >> 1)
@@ -84,4 +86,4 @@ void loop()
 	}
 	delay(1000);
 }
-</wire.h>
+```

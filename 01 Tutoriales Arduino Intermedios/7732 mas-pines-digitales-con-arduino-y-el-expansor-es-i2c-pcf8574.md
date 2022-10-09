@@ -4,7 +4,8 @@ Enlace entrada: https://www.luisllamas.es/mas-pines-digitales-con-arduino-y-el-e
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <wire.h>
+```cpp
+#include <Wire.h>
 
 const int pcfAddress = 0x38;
 
@@ -27,9 +28,10 @@ void loop()
 		delay(500);
 	}
 }
-</wire.h>
+```
 
-#include <wire.h>
+```cpp
+#include <Wire.h>
 
 const int pcfAddress = 0x38;
 
@@ -55,9 +57,10 @@ void loop()
 	// Mostrar el valor por puerto serie
 	Serial.println(value);
 }
-</wire.h>
+```
 
-#include <wire.h>
+```cpp
+#include <Wire.h>
 #include "PCF8574.h"
 
 PCF8574 expander;
@@ -89,4 +92,4 @@ void setup()
 void loop() 
 {
 }
-</wire.h>
+```

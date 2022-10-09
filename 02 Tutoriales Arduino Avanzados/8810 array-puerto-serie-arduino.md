@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/array-puerto-serie-arduino/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const size_t dataLength = 10;
 int data[dataLength];
  
@@ -26,8 +27,9 @@ void sendBytes(uint16_t value)
   Serial.write(highByte(value));
   Serial.write(lowByte(value));
 }
+```
 
-
+```cpp
 const size_t dataLength = 10;
 int data[dataLength];
 int dataIndex = 0;
@@ -58,8 +60,9 @@ uint16_t byteToInt(byte byte1, byte byte2)
 {
    return (uint16_t)byte1 << 8 | (uint16_t)byte2;
 }
+```
 
-
+```cpp
 const size_t dataLength = 10;
 int data[dataLength];
 
@@ -72,8 +75,9 @@ void setup()
 void loop()
 {
 }
+```
 
-
+```cpp
 const size_t dataLength = 10;
 int data[dataLength];
  
@@ -88,4 +92,5 @@ void loop()
   {
     Serial.readBytes((byte*)data, dataLength * sizeof(data[0]));
   } 
-}
+} 
+```

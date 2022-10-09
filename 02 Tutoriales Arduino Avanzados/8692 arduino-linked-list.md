@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-linked-list/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 struct node {
   int value;
   node *next;
@@ -120,3 +121,4 @@ void setup()
 void loop()
 {
 }
+```

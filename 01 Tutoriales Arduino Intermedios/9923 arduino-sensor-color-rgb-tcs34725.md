@@ -4,7 +4,8 @@ Enlace entrada: https://www.luisllamas.es/arduino-sensor-color-rgb-tcs34725/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
-#include <wire.h>
+```cpp
+#include <Wire.h>
 #include "Adafruit_TCS34725.h"
    
 /* Initialise with default values (int time = 2.4ms, gain = 1x) */
@@ -39,9 +40,10 @@ void loop(void) {
   Serial.println(" ");
   delay(1000);
 }
-</wire.h>
+```
 
-#include <wire.h>
+```cpp
+#include <Wire.h>
 #include "Adafruit_TCS34725.h"
 #include "RGBConverterLib.h"
 
@@ -123,9 +125,10 @@ void printColorName(double hue)
     Serial.println("Rojo");
   }
 }
-</uint8_t></uint8_t></uint8_t></wire.h>
+```
 
-#include <wire.h>
+```cpp
+#include <Wire.h>
 #include "Adafruit_TCS34725.h"
 #include "FastLED.h"
 FASTLED_USING_NAMESPACE
@@ -157,7 +160,7 @@ void setup()
   }
   
   delay(1000);
-  FastLED.addLeds<led_type, data_pin,="" color_order="">(leds, NUM_LEDS);
+  FastLED.addLeds<LED_TYPE, DATA_PIN, COLOR_ORDER>(leds, NUM_LEDS);
   for (int i=0; i<256; i++)
   {
       float x = i;
@@ -205,4 +208,4 @@ void calculateLeds()
   pixel = (tCurrent % INTERVAL) * NUM_LEDS / INTERVAL;
   leds[pixel] = CRGB(gammatable[(int)r], gammatable[(int)g], gammatable[(int)b]);
 }
-</led_type,></wire.h>
+```

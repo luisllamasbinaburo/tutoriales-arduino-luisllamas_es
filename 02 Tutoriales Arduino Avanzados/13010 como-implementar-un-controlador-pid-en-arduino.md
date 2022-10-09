@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/como-implementar-un-controlador-pid-en
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 // Asignaciones pins
 const int PIN_INPUT = A0;
 const int PIN_OUTPUT = 3;
@@ -50,9 +51,10 @@ double computePID(double inp){
  
         return output;
 }
+```
 
-
-#include <pidcontroller.hpp>
+<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+#include <PIDController.hpp>
 
 const int PIN_INPUT = 0;
 const int PIN_OUTPUT = 3;
@@ -75,4 +77,4 @@ void loop()
 
   analogWrite(PIN_OUTPUT, pidController.Output);
 }
-</double></double></pidcontroller.hpp>
+```

@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/arduino-filtro-media-movil/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int windowSize = 5;
 int circularBuffer[windowSize];
 int* circularBufferAccessor = circularBuffer;
@@ -56,3 +57,4 @@ void setup()
 void loop()
 {
 }
+```

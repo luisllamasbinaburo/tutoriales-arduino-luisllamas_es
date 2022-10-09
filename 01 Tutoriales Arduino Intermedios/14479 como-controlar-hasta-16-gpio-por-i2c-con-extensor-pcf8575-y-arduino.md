@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/como-controlar-hasta-16-gpio-por-i2c-c
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 #include "PCF8575.h"
 
 // Iniciar el PCF8575 en la dirección 0x20
@@ -26,3 +27,4 @@ void loop()
 	pcf8575.digitalWrite(P0, LOW);
 	delay(1000);
 }
+```

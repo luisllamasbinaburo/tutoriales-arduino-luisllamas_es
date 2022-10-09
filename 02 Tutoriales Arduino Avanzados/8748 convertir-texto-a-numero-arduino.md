@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/convertir-texto-a-numero-arduino/
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 #define DEBUG(a) Serial.println(a);
 
 String text = "-12345";
@@ -20,8 +21,9 @@ void setup()
 void loop()
 {
 }
+```
 
-
+```cpp
 #define DEBUG(a) Serial.println(a);
 
 String text = "-123.45";
@@ -38,8 +40,9 @@ void setup()
 void loop()
 {
 }
+```
 
-
+```cpp
 #define DEBUG(a) Serial.println(a);
 
 char* text = "-12345";
@@ -56,8 +59,9 @@ void setup()
 void loop()
 {
 }
+```
 
-
+```cpp
 #define DEBUG(a) Serial.println(a);
 
 char* text= "-123.45";
@@ -74,8 +78,9 @@ void setup()
 void loop()
 {
 }
+```
 
-
+```cpp
 #define DEBUG(a) Serial.println(a);
 
 char *text = "-12345";
@@ -109,8 +114,9 @@ long naiveToInt(const char *charArray) {
 
 	return isNegative ? -data : data;
 }
+```
 
-
+```cpp
 #define DEBUG(a) Serial.println(a);
 
 char *text = "-123.45";
@@ -160,3 +166,4 @@ float naiveToFloat(const char *charArray)
 	float data = (float)dataReal + (float)dataDecimal / dataPow;
 	return isNegative ? -data : data;
 }
+```

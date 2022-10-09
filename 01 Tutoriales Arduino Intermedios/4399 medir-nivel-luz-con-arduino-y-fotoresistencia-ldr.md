@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/medir-nivel-luz-con-arduino-y-fotoresi
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```cpp
 const int LEDPin = 13;
 const int LDRPin = 2;
 
@@ -24,8 +25,9 @@ void loop()
 		delay(50);
 	}
 }
+```
 
-
+```cpp
 
 const int LEDPin = 13;
 const int LDRPin = A0;
@@ -45,8 +47,9 @@ void loop() {
 		digitalWrite(LEDPin, LOW);
 	}
 }
+```
 
-
+```cpp
 const long A = 1000;     //Resistencia en oscuridad en KΩ
 const int B = 15;        //Resistencia a la luz (10 Lux) en KΩ
 const int Rc = 10;       //Resistencia calibracion en KΩ
@@ -70,3 +73,4 @@ void loop()
    Serial.println(ilum);	
    delay(1000);
 }
+```

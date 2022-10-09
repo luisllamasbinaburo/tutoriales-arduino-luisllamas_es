@@ -4,6 +4,7 @@ Enlace entrada: https://www.luisllamas.es/motores-paso-paso-arduino-driver-a4988
 Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 ****************************************************/
 
+```csharp
 const int dirPin = 8;
 const int stepPin = 9;
 
@@ -41,3 +42,4 @@ void loop() {
 	}
 	delay(1000);
 }
+```
