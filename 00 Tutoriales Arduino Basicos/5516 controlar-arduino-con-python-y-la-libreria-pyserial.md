@@ -1,8 +1,8 @@
-/***************************************************
-Códigos de ejemplo de los tutoriales de www.luisllamas.es
-Enlace entrada: https://www.luisllamas.es/controlar-arduino-con-python-y-la-libreria-pyserial/
-Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
-****************************************************/
+> Códigos de ejemplo de los tutoriales de www.luisllamas.es
+>
+> Enlace entrada: https://www.luisllamas.es/controlar-arduino-con-python-y-la-libreria-pyserial/
+>
+> Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 
 ```python
 python -m pip install PySerial

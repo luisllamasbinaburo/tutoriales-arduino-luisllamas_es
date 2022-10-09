@@ -1,8 +1,8 @@
-/***************************************************
-Códigos de ejemplo de los tutoriales de www.luisllamas.es
-Enlace entrada: https://www.luisllamas.es/guardar-variables-entre-reinicios-con-arduino-y-la-memoria-no-volatil-eeprom/
-Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
-****************************************************/
+> Códigos de ejemplo de los tutoriales de www.luisllamas.es
+>
+> Enlace entrada: https://www.luisllamas.es/guardar-variables-entre-reinicios-con-arduino-y-la-memoria-no-volatil-eeprom/
+>
+> Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 
 ```cpp
 //Lee un único byte de la dirección address

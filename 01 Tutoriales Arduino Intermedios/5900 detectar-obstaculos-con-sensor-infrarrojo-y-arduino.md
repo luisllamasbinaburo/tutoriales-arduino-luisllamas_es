@@ -1,8 +1,8 @@
-/***************************************************
-Códigos de ejemplo de los tutoriales de www.luisllamas.es
-Enlace entrada: https://www.luisllamas.es/detectar-obstaculos-con-sensor-infrarrojo-y-arduino/
-Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
-****************************************************/
+> Códigos de ejemplo de los tutoriales de www.luisllamas.es
+>
+> Enlace entrada: https://www.luisllamas.es/detectar-obstaculos-con-sensor-infrarrojo-y-arduino/
+>
+> Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 
 ```csharp
 const int sensorPin = 9;

@@ -1,8 +1,8 @@
-/***************************************************
-Códigos de ejemplo de los tutoriales de www.luisllamas.es
-Enlace entrada: https://www.luisllamas.es/arduino-detector-gas-mq/
-Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
-****************************************************/
+> Códigos de ejemplo de los tutoriales de www.luisllamas.es
+>
+> Enlace entrada: https://www.luisllamas.es/arduino-detector-gas-mq/
+>
+> Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 
 ```cpp
 const int MQ_PIN = 2;

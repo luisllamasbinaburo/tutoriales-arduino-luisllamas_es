@@ -1,8 +1,8 @@
-/***************************************************
-Códigos de ejemplo de los tutoriales de www.luisllamas.es
-Enlace entrada: https://www.luisllamas.es/medir-color-arduino-colorimetro-tcs3200/
-Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
-****************************************************/
+> Códigos de ejemplo de los tutoriales de www.luisllamas.es
+>
+> Enlace entrada: https://www.luisllamas.es/medir-color-arduino-colorimetro-tcs3200/
+>
+> Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 
 ```cpp
 //VCC——5V	

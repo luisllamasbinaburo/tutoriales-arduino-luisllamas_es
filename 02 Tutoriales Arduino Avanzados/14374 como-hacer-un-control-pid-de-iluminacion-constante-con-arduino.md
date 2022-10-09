@@ -1,8 +1,8 @@
-/***************************************************
-Códigos de ejemplo de los tutoriales de www.luisllamas.es
-Enlace entrada: https://www.luisllamas.es/como-hacer-un-control-pid-de-iluminacion-constante-con-arduino/
-Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
-****************************************************/
+> Códigos de ejemplo de los tutoriales de www.luisllamas.es
+>
+> Enlace entrada: https://www.luisllamas.es/como-hacer-un-control-pid-de-iluminacion-constante-con-arduino/
+>
+> Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 
 ```csharp
 #include <PIDController.hpp>

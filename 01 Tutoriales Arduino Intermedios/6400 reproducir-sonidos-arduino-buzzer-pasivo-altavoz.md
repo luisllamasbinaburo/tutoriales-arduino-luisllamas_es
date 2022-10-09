@@ -1,8 +1,8 @@
-/***************************************************
-Códigos de ejemplo de los tutoriales de www.luisllamas.es
-Enlace entrada: https://www.luisllamas.es/reproducir-sonidos-arduino-buzzer-pasivo-altavoz/
-Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
-****************************************************/
+> Códigos de ejemplo de los tutoriales de www.luisllamas.es
+>
+> Enlace entrada: https://www.luisllamas.es/reproducir-sonidos-arduino-buzzer-pasivo-altavoz/
+>
+> Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 
 ```csharp
 tone(pin, frecuencia); //activa un tono de frecuencia determinada en un pin dado

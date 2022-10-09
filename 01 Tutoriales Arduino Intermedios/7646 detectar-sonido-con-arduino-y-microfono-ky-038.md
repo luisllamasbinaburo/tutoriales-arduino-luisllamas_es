@@ -1,8 +1,8 @@
-/***************************************************
-Códigos de ejemplo de los tutoriales de www.luisllamas.es
-Enlace entrada: https://www.luisllamas.es/detectar-sonido-con-arduino-y-microfono-ky-038/
-Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
-****************************************************/
+> Códigos de ejemplo de los tutoriales de www.luisllamas.es
+>
+> Enlace entrada: https://www.luisllamas.es/detectar-sonido-con-arduino-y-microfono-ky-038/
+>
+> Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 
 ```cpp
 const int pinLED = 13;

@@ -1,8 +1,8 @@
-/***************************************************
-Códigos de ejemplo de los tutoriales de www.luisllamas.es
-Enlace entrada: https://www.luisllamas.es/como-cambiar-la-frecuencia-de-un-pwm-en-arduino/
-Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
-****************************************************/
+> Códigos de ejemplo de los tutoriales de www.luisllamas.es
+>
+> Enlace entrada: https://www.luisllamas.es/como-cambiar-la-frecuencia-de-un-pwm-en-arduino/
+>
+> Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 
 ```cpp
 //Atmega 328p (Arduino Uno, Nano)

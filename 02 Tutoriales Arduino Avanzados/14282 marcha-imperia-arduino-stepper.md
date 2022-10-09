@@ -1,8 +1,8 @@
-/***************************************************
-Códigos de ejemplo de los tutoriales de www.luisllamas.es
-Enlace entrada: https://www.luisllamas.es/marcha-imperia-arduino-stepper/
-Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
-****************************************************/
+> Códigos de ejemplo de los tutoriales de www.luisllamas.es
+>
+> Enlace entrada: https://www.luisllamas.es/marcha-imperia-arduino-stepper/
+>
+> Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 
 ```csharp
 typedef void(*PlayNoteCallback)(int note, int duration);

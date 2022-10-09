@@ -1,8 +1,8 @@
-/***************************************************
-Códigos de ejemplo de los tutoriales de www.luisllamas.es
-Enlace entrada: https://www.luisllamas.es/arduino-i2c-json/
-Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
-****************************************************/
+> Códigos de ejemplo de los tutoriales de www.luisllamas.es
+>
+> Enlace entrada: https://www.luisllamas.es/arduino-i2c-json/
+>
+> Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 
 <pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 #include "Wire.h"

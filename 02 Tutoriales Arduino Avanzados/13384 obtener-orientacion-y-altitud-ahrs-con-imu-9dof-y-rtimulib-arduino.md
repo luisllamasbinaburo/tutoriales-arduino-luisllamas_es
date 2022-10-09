@@ -1,8 +1,8 @@
-/***************************************************
-Códigos de ejemplo de los tutoriales de www.luisllamas.es
-Enlace entrada: https://www.luisllamas.es/obtener-orientacion-y-altitud-ahrs-con-imu-9dof-y-rtimulib-arduino/
-Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
-****************************************************/
+> Códigos de ejemplo de los tutoriales de www.luisllamas.es
+>
+> Enlace entrada: https://www.luisllamas.es/obtener-orientacion-y-altitud-ahrs-con-imu-9dof-y-rtimulib-arduino/
+>
+> Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 
 <pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 #include <Wire.h>

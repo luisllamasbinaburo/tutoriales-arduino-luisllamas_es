@@ -1,8 +1,8 @@
-/***************************************************
-Códigos de ejemplo de los tutoriales de www.luisllamas.es
-Enlace entrada: https://www.luisllamas.es/como-usar-correccion-gamma-en-fuentes-de-luz-con-arduino/
-Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
-****************************************************/
+> Códigos de ejemplo de los tutoriales de www.luisllamas.es
+>
+> Enlace entrada: https://www.luisllamas.es/como-usar-correccion-gamma-en-fuentes-de-luz-con-arduino/
+>
+> Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 
 <pre class="EnlighterJSRAW" data-enlighter-language="cpp">
 const static uint8_t PROGMEM GammeTable8[] = {
