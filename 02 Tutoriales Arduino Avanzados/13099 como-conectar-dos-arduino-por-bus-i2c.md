@@ -4,7 +4,7 @@
 >
 > Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 
-<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+```cpp
 #include "Wire.h"
 
 const byte I2C_SLAVE_ADDR = 0x20;
@@ -49,7 +49,7 @@ void requestToSlave()
 }
 ```
 
-<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+```cpp
 #include "Wire.h"
 
 const byte I2C_SLAVE_ADDR = 0x20;

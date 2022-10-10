@@ -4,7 +4,7 @@
 >
 > Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 
-<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+```cpp
 #include <Wire.h>
 #include "I2Cdev.h"
 #include "RTIMUSettings.h"
@@ -81,7 +81,7 @@ void loop()
 }
 ```
 
-<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+```cpp
 #include <Wire.h>
 #include "I2Cdev.h"
 #include "RTIMUSettings.h"
@@ -147,7 +147,7 @@ void loop()
 }
 ```
 
-<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+```cpp
 import processing.serial.*;
 import java.awt.event.KeyEvent;
 import java.io.IOException;

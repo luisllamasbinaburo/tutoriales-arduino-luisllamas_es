@@ -43,7 +43,7 @@ void loop()
 }
 ```
 
-<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+```cpp
 #define PCINT_PIN A5
 
 #include <YetAnotherPcInt.h>

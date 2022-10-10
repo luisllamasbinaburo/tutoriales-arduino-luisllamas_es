@@ -4,7 +4,7 @@
 >
 > Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 
-<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+```cpp
 #include "Wire.h"
 #include <ArduinoJson.hpp>
 #include <ArduinoJson.h>
@@ -88,7 +88,7 @@ void DeserializeResponse()
 }
 ```
 
-<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+```cpp
 #include "Wire.h"
 #include <ArduinoJson.hpp>
 #include <ArduinoJson.h>

@@ -4,7 +4,7 @@
 >
 > Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 
-<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+```cpp
 // Asignaciones pins
 const int PIN_INPUT = A0;
 const int PIN_OUTPUT = 3;
@@ -53,7 +53,7 @@ double computePID(double inp){
 }
 ```
 
-<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+```cpp
 #include <PIDController.hpp>
 
 const int PIN_INPUT = 0;

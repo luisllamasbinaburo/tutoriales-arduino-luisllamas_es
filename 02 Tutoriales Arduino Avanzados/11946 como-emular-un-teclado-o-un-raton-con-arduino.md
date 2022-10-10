@@ -4,7 +4,7 @@
 >
 > Todo el contenido distribuido bajo licencia CCC, salvo indicación expresa
 
-<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+```cpp
 // Inicia y finaliza el teclado virtual
 Keyboard.begin()
 Keyboard.end()
@@ -20,7 +20,7 @@ Keyboard.release()
 Keyboard.releaseAll()
 ```
 
-<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+```cpp
 #include <Keyboard.h>
 
 void setup() {
@@ -34,7 +34,7 @@ void loop() {
 }
 ```
 
-<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+```cpp
 #include <Keyboard.h>
 
 void setup() {
@@ -55,7 +55,7 @@ void loop() {
 }
 ```
 
-<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+```cpp
 #include <Keyboard.h>
 
 void setup() {
@@ -79,7 +79,7 @@ void loop() {
 }
 ```
 
-<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+```cpp
 // Iniciar y detener el ratón virtual
 Mouse.begin()
 Mouse.end()
@@ -94,7 +94,7 @@ Mouse.release()
 Mouse.isPressed()
 ```
 
-<pre class="EnlighterJSRAW" data-enlighter-language="cpp">
+```cpp
 #include "Mouse.h"
 
 void setup() {
